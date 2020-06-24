@@ -1,0 +1,10 @@
+@import './variable.scss';
+
+@mixin display($property) {
+    display: $property;
+}
+
+@mixin flex-property($justify,$align) {
+    justify-content: $justify;
+    align-items: $align;
+}
