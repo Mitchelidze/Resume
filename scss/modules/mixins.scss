@@ -8,3 +8,7 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin t-transform($t-transform) {
+    text-transform: $t-transform;
+}

@@ -1,2 +1,32 @@
 @import '../modules/variable.scss';
 @import '../modules/classes.scss';
+
+body {
+    @extend %position;
+    .header {
+        @include display(flex);
+        @include flex-property(space-between,center);
+        margin-bottom: 32px;
+        span {
+            font-size: $text-lg;
+        }
+        .nav {
+            @include display(flex);
+            .nav-li {
+                @include t-transform(capitalize);
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.container-main {
+    .container-about{
+        h1 {
+            @extend %title1;
+        }
+        .text-base {
+            @extend %text-base;
+        }
+    }
+}

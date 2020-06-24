@@ -1,0 +1,18 @@
+@import './variable.scss';
+
+%position {
+    max-width: 1270px;
+    width: 90%;
+    margin: 32px auto;
+}
+
+%title1 {
+    color : $sec-color;
+    font-size: $text-2xl;
+    text-transform: capitalize;
+}
+
+%text-base {
+    font-size: $text-base;
+    color: $tcolor-black;
+}
