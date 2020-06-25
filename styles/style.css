@@ -62,9 +62,9 @@ body .container-main .container-skills .desc-skills .skills .box1 .title3 {
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 500;
-  margin-bottom: 2px; }
+  margin-bottom: 4px; }
 
-body .container-main .container-about .text-base, body .container-main .container-skills .desc-skills, body .container-main .container-skills .desc-skills .skills .box1 .text-base {
+body .container-main .container-about .text-base, body .container-main .container-skills .desc-skills, body .container-main .container-skills .desc-skills .skills .box1 .text-base, .text-base, .desc-skills {
   font-size: 16px;
   color: #484848;
   margin-bottom: 16px; }
@@ -90,9 +90,9 @@ body .container-main .container-skills .desc-skills .skills .box1 .title3 {
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 500;
-  margin-bottom: 2px; }
+  margin-bottom: 4px; }
 
-body .container-main .container-about .text-base, body .container-main .container-skills .desc-skills, body .container-main .container-skills .desc-skills .skills .box1 .text-base {
+body .container-main .container-about .text-base, body .container-main .container-skills .desc-skills, body .container-main .container-skills .desc-skills .skills .box1 .text-base, .text-base, .desc-skills {
   font-size: 16px;
   color: #484848;
   margin-bottom: 16px; }
@@ -113,13 +113,22 @@ body .header {
 body .container-main {
   max-width: 780px; }
   body .container-main .container-about h1 {
-    margin-bottom: 24px; }
+    margin-bottom: 16px; }
   body .container-main .container-about .text-base {
     width: 70%;
-    margin-bottom: 40px; }
-  body .container-main .container-about .contact-info .contact-li {
-    margin-bottom: 8px; }
+    margin-bottom: 24px; }
+  body .container-main .container-about .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 288px; }
   body .container-main .container-skills .desc-skills .skills {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
+
+.contact-li {
+  margin-bottom: 8px;
+  color: #484848; }
+  .contact-li a {
+    color: #484848; }
