@@ -14,19 +14,47 @@ body {
             @include display(flex);
             .nav-li {
                 @include t-transform(capitalize);
-                margin-right: 16px;
+                margin-left: 32px;
             }
         }
     }
-}
-
-.container-main {
-    .container-about{
-        h1 {
-            @extend %title1;
+    .container-main {
+        max-width: 780px;
+        .container-about{
+            h1 {
+                @extend %title1;
+                margin-bottom: 24px;
+            }
+            .text-base {
+                @extend %text-base;
+                width: 70%;
+                margin-bottom: 40px;
+            }
+            .contact-info {
+                .contact-li {
+                    margin-bottom: 8px;
+                }
+            }
         }
-        .text-base {
-            @extend %text-base;
+        .container-skills {
+            .title2 {
+                    @extend %title2;
+                }
+            .desc-skills {
+                @extend %text-base; 
+                .skills {
+                    @include display(flex);
+                    @include flex-property(space-between,flex-start);
+                    .box1 {
+                        .title3 {
+                            @extend %title3;
+                        }
+                        .text-base {
+                            @extend %text-base;
+                        }
+                    }
+                }
+            }
         }
     }
 }

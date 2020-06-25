@@ -46,28 +46,56 @@ body {
   width: 90%;
   margin: 32px auto; }
 
-.container-main .container-about h1 {
+body .container-main .container-about h1 {
   color: #484848;
   font-size: 48px;
   text-transform: capitalize; }
 
-.container-main .container-about .text-base {
+body .container-main .container-skills .title2 {
+  color: #222222;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 4px; }
+
+body .container-main .container-skills .desc-skills .skills .box1 .title3 {
+  color: #222222;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 2px; }
+
+body .container-main .container-about .text-base, body .container-main .container-skills .desc-skills, body .container-main .container-skills .desc-skills .skills .box1 .text-base {
   font-size: 16px;
-  color: #222222; }
+  color: #484848;
+  margin-bottom: 16px; }
 
 body {
   max-width: 1270px;
   width: 90%;
   margin: 32px auto; }
 
-.container-main .container-about h1 {
+body .container-main .container-about h1 {
   color: #484848;
   font-size: 48px;
   text-transform: capitalize; }
 
-.container-main .container-about .text-base {
+body .container-main .container-skills .title2 {
+  color: #222222;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 4px; }
+
+body .container-main .container-skills .desc-skills .skills .box1 .title3 {
+  color: #222222;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 2px; }
+
+body .container-main .container-about .text-base, body .container-main .container-skills .desc-skills, body .container-main .container-skills .desc-skills .skills .box1 .text-base {
   font-size: 16px;
-  color: #222222; }
+  color: #484848;
+  margin-bottom: 16px; }
 
 body .header {
   display: flex;
@@ -80,4 +108,18 @@ body .header {
     display: flex; }
     body .header .nav .nav-li {
       text-transform: capitalize;
-      margin-right: 16px; }
+      margin-left: 32px; }
+
+body .container-main {
+  max-width: 780px; }
+  body .container-main .container-about h1 {
+    margin-bottom: 24px; }
+  body .container-main .container-about .text-base {
+    width: 70%;
+    margin-bottom: 40px; }
+  body .container-main .container-about .contact-info .contact-li {
+    margin-bottom: 8px; }
+  body .container-main .container-skills .desc-skills .skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }

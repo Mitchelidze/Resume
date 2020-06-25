@@ -12,7 +12,22 @@
     text-transform: capitalize;
 }
 
+%title2 {
+    color : $main-color;
+    font-size: $text-xl;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+%title3 {
+    color: $main-color;
+    font-size: $text-medium;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
 %text-base {
     font-size: $text-base;
-    color: $tcolor-black;
+    color: $sec-color;
+    margin-bottom: 16px;
 }
