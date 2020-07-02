@@ -8,7 +8,7 @@
 
 %title1 {
     color : $sec-color;
-    font-size: $text-2xl;
+    font-size: $text-3xl;
     text-transform: capitalize;
     font-weight: 800;
     margin: 32px 0 8px 0;
@@ -22,12 +22,11 @@
     letter-spacing: -0.25px;
 }
 
-%title3 {
+%text-medium {
     color: $main-color;
     font-size: $text-medium;
     text-transform: capitalize;
-    font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 %text-base {
     font-size: $text-base;

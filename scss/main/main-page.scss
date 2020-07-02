@@ -8,6 +8,7 @@
         @include display(flex);
         @include flex-property(space-between,center);
         @include t-transform(capitalize);
+        font-size: $text-medium;
         .logo-nav {
             @include display(flex);
             @include flex-property(flex-start,center);
@@ -22,6 +23,7 @@
     .value-p {
         @include col-center;
         font-family: 'EB Garamond', serif;
+        margin-bottom: 160px;
         .text {
             text-align: center;
            h1 {
@@ -44,6 +46,40 @@
           .underline {
               text-decoration: underline;
           }
+        }
+    }
+    .featured {
+        .featured-title {
+            @include col-center;
+            text-align: center;
+            h2 {
+                @include t-transform(uppercase);
+                font-size: $text-2xl;
+                text-align: center;
+            }
+            p {
+                @extend %text-medium;
+            }
+        }
+        ul {
+            @include display(flex);
+            @include flex-property(center,center);
+            li {
+                @include t-transform(uppercase);
+                margin-right: 16px;
+                text-decoration: underline;
+            }
+        }
+        .boxes {
+            @include display(flex);
+            @include flex-property(space-around,center);
+            flex-wrap: wrap;
+        }
+        .box {
+            max-width: 330px;
+            padding: 24px;
+            margin: 8px;
+            background-color: gray;
         }
     }
 }
