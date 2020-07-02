@@ -12,3 +12,9 @@
 @mixin t-transform($t-transform) {
     text-transform: $t-transform;
 }
+
+@mixin col-center {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 620px;
+}

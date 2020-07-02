@@ -1,0 +1,49 @@
+@import '../modules/variable.scss';
+@import '../modules/classes.scss';
+@import '../modules/mixins.scss';
+
+.container-main {
+    @extend %position;
+    .navigation {
+        @include display(flex);
+        @include flex-property(space-between,center);
+        @include t-transform(capitalize);
+        .logo-nav {
+            @include display(flex);
+            @include flex-property(flex-start,center);
+            ul {
+                @include display(flex);
+                .nav-li {
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+    .value-p {
+        @include col-center;
+        font-family: 'EB Garamond', serif;
+        .text {
+            text-align: center;
+           h1 {
+               @extend %title1;
+           }
+           p {
+            @extend %title2; 
+            line-height: 28px; 
+           }
+        }
+        .banner-img {
+            width: 100%;
+            margin: 32px 0 32px 0; 
+        }
+        p {
+          @extend %title2;
+          .bold {
+              font-weight: 700;
+          }
+          .underline {
+              text-decoration: underline;
+          }
+        }
+    }
+}

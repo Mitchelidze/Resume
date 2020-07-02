@@ -10,13 +10,16 @@
     color : $sec-color;
     font-size: $text-2xl;
     text-transform: capitalize;
+    font-weight: 800;
+    margin: 32px 0 8px 0;
 }
 
 %title2 {
     color : $main-color;
     font-size: $text-xl;
     text-transform: capitalize;
-    margin-bottom: 4px;
+    line-height: 43px;
+    letter-spacing: -0.25px;
 }
 
 %title3 {
