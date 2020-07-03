@@ -64,6 +64,7 @@
         ul {
             @include display(flex);
             @include flex-property(center,center);
+            flex-wrap: wrap;
             li {
                 @include t-transform(uppercase);
                 margin-right: 16px;
@@ -74,12 +75,39 @@
             @include display(flex);
             @include flex-property(space-around,center);
             flex-wrap: wrap;
+            .box {
+                max-width: 330px;
+                padding: 24px;
+                margin: 8px;
+                background-color: gray;
+            }
         }
-        .box {
-            max-width: 330px;
-            padding: 24px;
-            margin: 8px;
-            background-color: gray;
+    }
+    .popovers {
+        max-width: 336px;
+        padding: 16px 24px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07);
+        box-shadow: 0px 14px 34px rgba(23, 55, 87, 0.1);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: $main-color;
+        .popover {
+            position: relative;
+            .style {
+                /* Position at the bottom left corner */
+            bottom: -32px;
+            position: absolute;
+            left: 16px;
+    
+            /* Border */
+            background-color: white;
+            transform: translate(50%, -50%) rotate(45deg);
+    
+            /* Size */
+            height: 16px;
+            width: 16px;
+            }
         }
     }
 }

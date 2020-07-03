@@ -137,7 +137,8 @@ a {
 .container-main .featured ul {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .container-main .featured ul li {
     text-transform: uppercase;
     margin-right: 16px;
@@ -148,9 +149,31 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; }
+  .container-main .featured .boxes .box {
+    max-width: 330px;
+    padding: 24px;
+    margin: 8px;
+    background-color: gray; }
 
-.container-main .featured .box {
-  max-width: 330px;
-  padding: 24px;
-  margin: 8px;
-  background-color: gray; }
+.container-main .popovers {
+  max-width: 336px;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 14px 34px rgba(23, 55, 87, 0.1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #222222; }
+  .container-main .popovers .popover {
+    position: relative; }
+    .container-main .popovers .popover .style {
+      /* Position at the bottom left corner */
+      bottom: -32px;
+      position: absolute;
+      left: 16px;
+      /* Border */
+      background-color: white;
+      transform: translate(50%, -50%) rotate(45deg);
+      /* Size */
+      height: 16px;
+      width: 16px; }
