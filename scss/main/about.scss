@@ -1,3 +1,20 @@
 @import '../modules/variable.scss';
 @import '../modules/classes.scss';
 @import '../modules/mixins.scss';
+
+
+.container-main {
+    .r-l-wrap {
+        @include display(flex);
+        align-items: flex-start;
+        margin-top: 32px;
+        .picture-title-wrap {
+            @include display(flex);
+            flex-direction: column;
+            width: 130px;
+        }
+        .main-content {
+            @extend %position-article;
+        }
+    }
+}

@@ -6,6 +6,12 @@
     margin: 32px auto;
 }
 
+%position-article {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 %title1 {
     color : $sec-color;
     font-size: $text-3xl;

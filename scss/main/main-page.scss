@@ -161,6 +161,9 @@ footer {
                 @include display(flex);
                 li {
                     margin-right: 4px;
+                    a {
+                        color: #ffffff;
+                    }
                 } 
             }
         }
