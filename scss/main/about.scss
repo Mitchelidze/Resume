@@ -7,14 +7,97 @@
     .r-l-wrap {
         @include display(flex);
         align-items: flex-start;
-        margin-top: 32px;
+        margin-top: 90px;
         .picture-title-wrap {
             @include display(flex);
             flex-direction: column;
             width: 130px;
+            position: fixed;
+            top: 90px;
+            img {
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+            }
+            h3 {
+                font-size: $text-medium;
+            }
         }
         .main-content {
             @extend %position-article;
+            @extend %text-body-lg;
+            font-family: 'Caladea', serif;
+            .text {
+                h2 {
+                    @extend %title2;
+                }
+                p {
+                    margin-bottom: 32px; 
+                    // margin-bottom: 24px;
+                    span {
+                        @include t-decoration(underline);
+                    }
+                }
+            }
+            .texts {
+                p {
+                    margin-bottom: 32px; 
+                    mark {
+                        background-color: #Ff77ff;
+                    }
+                }
+                p {
+                    margin-bottom: 32px; 
+                }
+            }
         }
+    }
+    .rev {
+        @include display(flex);
+        @include flex-property(center,center);
+        .review {
+            .popover {
+                @include popover;
+                @include position(relative);
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -16px;
+                    left: 16px;
+                    width: 0;
+                    height: 0;
+                    border-top: 16px solid #ffffff;
+                    border-right: 24px solid transparent;
+     
+                }
+                p {
+                    @extend %text-base;
+                    font-family: 'Caladea', serif;
+                }
+             }
+             .img-name-wrap {
+                 @include display(flex);
+                 @include flex-property(space-between,center);
+                 max-width: 260px;
+                 img {
+                     width: 40px;
+                     height: 40px;
+                     object-fit: cover;
+                     border-radius: 100%;
+                 }
+                 ul {
+                     @include t-transform(uppercase);
+                     font-size: $text-xs;         
+                     font-family: 'Oswald', sans-serif;
+                     font-weight: 300;
+                     letter-spacing: 0.5px;
+                     margin-right: 16px;
+                     color: $main-color;
+                     .name {
+                         margin-bottom: 6px;
+                     }
+                 }
+             }
+        } 
     }
 }

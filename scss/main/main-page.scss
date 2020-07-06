@@ -7,8 +7,13 @@
     .navigation {
         @include display(flex);
         @include flex-property(space-between,center);
-        @include t-transform(capitalize);
-        font-size: $text-medium;
+        @include t-transform(uppercase);
+        @extend %text-nav;
+        position: fixed;
+        top: 0;
+        height: 66px;
+        width: 90%;
+        background-color: $color-white;
         .logo-nav {
             @include display(flex);
             @include flex-property(flex-start,center);
@@ -24,6 +29,7 @@
         @include col-center;
         font-family: 'EB Garamond', serif;
         margin-bottom: 160px;
+        margin-top: 90px;
         .text {
             text-align: center;
            h1 {
@@ -54,40 +60,67 @@
             text-align: center;
             h2 {
                 @include t-transform(uppercase);
-                font-size: $text-2xl;
-                text-align: center;
+                @extend %title2;
+                font-family: 'Oswald', sans-serif;
             }
             p {
-                @extend %text-medium;
+                @extend %text-body-lg;
+                font-family: 'Caladea', serif;
+                margin-bottom: 32px;
             }
         }
         ul {
             @include display(flex);
             @include flex-property(center,center);
             flex-wrap: wrap;
+            margin-bottom: 32px;
             li {
-                @include t-transform(uppercase);
-                margin-right: 16px;
-                text-decoration: underline;
+                a {
+                    @include t-transform(uppercase);
+                    @include t-decoration(underline);
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    margin-right: 16px;
+                    color: $main-color;
+                }
             }
         }
         .boxes {
             @include display(flex);
             @include flex-property(space-around,center);
             flex-wrap: wrap;
+            margin-top: 42px;
             .box {
+                @include shadow;
                 max-width: 330px;
                 padding: 24px;
                 margin: 8px;
-                background-color: gray;
+                border-radius: 8px;
+                h3 {
+                    @include t-transform(uppercase);
+                    @extend %title3;
+                    font-family: 'Oswald', sans-serif;
+                }
+                p {
+                    font-family: 'Caladea', serif;
+                    @extend %text-body-medium;
+                }
+                img {
+                    max-width: 282px;
+                    margin-bottom: 16px;
+                }
+                span {
+                    @include t-decoration(underline);
+                }
             }
         }
     }
     .section-reviews {
         @include display(flex);
         @include flex-property(space-around,center);
-        margin: 8px;
         flex-wrap: wrap;
+        margin: 8px;
         .review {
             align-self: flex-start;
             .popover {
@@ -104,11 +137,15 @@
                     border-right: 24px solid transparent;
      
                 }
+                p {
+                    @extend %text-base;
+                    font-family: 'Caladea', serif;
+                }
              }
              .img-name-wrap {
                  @include display(flex);
                  @include flex-property(space-between,center);
-                 max-width: 300px;
+                 max-width: 260px;
                  img {
                      width: 40px;
                      height: 40px;
@@ -117,7 +154,12 @@
                  }
                  ul {
                      @include t-transform(uppercase);
-                     font-size: $text-xs;
+                     font-size: $text-xs;         
+                     font-family: 'Oswald', sans-serif;
+                     font-weight: 300;
+                     letter-spacing: 0.5px;
+                     margin-right: 16px;
+                     color: $main-color;
                      .name {
                          margin-bottom: 6px;
                      }
@@ -128,7 +170,7 @@
 }
 footer {
     background-color: $main-color;
-    color: #ffffff;
+    color: $color-white;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 48px;
@@ -140,29 +182,32 @@ footer {
             margin-bottom: 16px;
         }
         .about-mail-wrap {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+            letter-spacing: 1px;
             p {
                 margin-bottom: 4px;
                 a {
-                    color: #ffffff;
+                    color: $color-white;
                 }
             }
         }
         .copy-social {
             @include display(flex);
             @include flex-property(space-between,flex-start);
+            @include tb-border-gray;
             flex-wrap: wrap;
-            border-top: 1px solid rgb(58, 55, 55);
-            border-bottom: 1px solid rgb(58, 55, 55);
-            margin-top: 32px;
-            margin-bottom: 32px;
-            padding-top: 16px;
-            padding-bottom: 16px;
+            margin: 32px 0 32px 0;
+            padding: 16px 0 16px 0;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+            letter-spacing: 1px;
             ul {
                 @include display(flex);
                 li {
                     margin-right: 4px;
                     a {
-                        color: #ffffff;
+                        color: $color-white;
                     }
                 } 
             }
@@ -171,7 +216,7 @@ footer {
             p {
                 a {
                     @include t-decoration(underline);
-                    color: #ffffff;
+                    color: $color-white;
                 }
             }
         }

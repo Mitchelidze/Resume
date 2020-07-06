@@ -3,7 +3,7 @@
 %position {
     max-width: 1270px;
     width: 90%;
-    margin: 32px auto;
+    margin: 0 auto;
 }
 
 %position-article {
@@ -21,21 +21,47 @@
 }
 
 %title2 {
-    color : $main-color;
-    font-size: $text-xl;
-    text-transform: capitalize;
-    line-height: 43px;
-    letter-spacing: -0.25px;
+    font-size: $text-2xl;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
-%text-medium {
-    color: $main-color;
-    font-size: $text-medium;
-    text-transform: capitalize;
+%title3 {
+    font-size: $text-lg;
+    font-weight: 400;
+    letter-spacing: 0.5px;
     margin-bottom: 8px;
 }
+
+
 %text-base {
     font-size: $text-base;
     color: $sec-color;
-    margin-bottom: 16px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+%text-body-lg {
+    font-size: $text-body-lg;
+    color: $main-color;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+}
+
+%text-body-medium {
+    font-size: $text-medium;
+    color: $sec-color;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+}
+
+%text-nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: $text-medium;
+    color: $main-color;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
