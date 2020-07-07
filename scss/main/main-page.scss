@@ -7,8 +7,9 @@
     .navigation {
         @include display(flex);
         @include flex-property(space-between,center);
-        @include t-transform(uppercase);
+        @include t-transform(capitalize);
         @extend %text-nav;
+        font-family: 'Josefin Sans', sans-serif;
         position: fixed;
         top: 0;
         height: 66px;
@@ -45,7 +46,10 @@
             margin: 32px 0 32px 0; 
         }
         p {
-          @extend %title2;
+            font-size: $text-2xl;
+            color: $sec-color;
+            line-height: 40px;
+            letter-spacing: 0.5px;
           .bold {
               font-weight: 700;
           }
@@ -182,10 +186,10 @@ footer {
             margin-bottom: 16px;
         }
         .about-mail-wrap {
-            font-family: 'Oswald', sans-serif;
-            font-weight: 200;
-            letter-spacing: 1px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 300;
             p {
+                font-size: $text-medium;
                 margin-bottom: 4px;
                 a {
                     color: $color-white;
@@ -199,9 +203,9 @@ footer {
             flex-wrap: wrap;
             margin: 32px 0 32px 0;
             padding: 16px 0 16px 0;
-            font-family: 'Oswald', sans-serif;
-            font-weight: 200;
-            letter-spacing: 1px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 300;
+            font-size: $text-medium;
             ul {
                 @include display(flex);
                 li {
@@ -214,6 +218,9 @@ footer {
         }
         div {
             p {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: $text-medium;
                 a {
                     @include t-decoration(underline);
                     color: $color-white;
