@@ -46,19 +46,26 @@ a {
   width: 90%;
   margin: 0 auto; }
 
-.container-main .r-l-wrap .main-content {
+.container-main h1, .container-main .main-content {
   max-width: 680px;
   width: 100%;
   margin: 0 auto; }
 
 .container-main .value-p .text h1 {
-  color: #484848;
+  color: #222222;
   font-size: 48px;
   text-transform: capitalize;
   font-weight: 800;
   margin: 32px 0 8px 0; }
 
-.container-main .value-p .text p, .container-main .value-p p, .container-main .featured .featured-title h2, .container-main .r-l-wrap .main-content .text h2 {
+.container-main h1 {
+  color: #222222;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 32px; }
+
+.container-main .value-p .text p, .container-main .value-p p, .container-main .featured .featured-title h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 8px;
@@ -71,14 +78,14 @@ a {
   letter-spacing: 0.5px;
   margin-bottom: 8px; }
 
-.container-main .section-reviews .review .popover p, .container-main .rev .review .popover p {
+.container-main .section-reviews .review .popover p {
   font-size: 16px;
   color: #484848;
   letter-spacing: 0.2px;
   line-height: 20px;
   margin-bottom: 4px; }
 
-.container-main .featured .featured-title p, .container-main .r-l-wrap .main-content {
+.container-main .featured .featured-title p, .container-main .main-content p {
   font-size: 21px;
   color: #222222;
   line-height: 30px;
@@ -102,19 +109,26 @@ a {
   width: 90%;
   margin: 0 auto; }
 
-.container-main .r-l-wrap .main-content {
+.container-main h1, .container-main .main-content {
   max-width: 680px;
   width: 100%;
   margin: 0 auto; }
 
 .container-main .value-p .text h1 {
-  color: #484848;
+  color: #222222;
   font-size: 48px;
   text-transform: capitalize;
   font-weight: 800;
   margin: 32px 0 8px 0; }
 
-.container-main .value-p .text p, .container-main .value-p p, .container-main .featured .featured-title h2, .container-main .r-l-wrap .main-content .text h2 {
+.container-main h1 {
+  color: #222222;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 32px; }
+
+.container-main .value-p .text p, .container-main .value-p p, .container-main .featured .featured-title h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 8px;
@@ -127,14 +141,14 @@ a {
   letter-spacing: 0.5px;
   margin-bottom: 8px; }
 
-.container-main .section-reviews .review .popover p, .container-main .rev .review .popover p {
+.container-main .section-reviews .review .popover p {
   font-size: 16px;
   color: #484848;
   letter-spacing: 0.2px;
   line-height: 20px;
   margin-bottom: 4px; }
 
-.container-main .featured .featured-title p, .container-main .r-l-wrap .main-content {
+.container-main .featured .featured-title p, .container-main .main-content p {
   font-size: 21px;
   color: #222222;
   line-height: 30px;
@@ -337,19 +351,26 @@ footer {
   width: 90%;
   margin: 0 auto; }
 
-.container-main .r-l-wrap .main-content {
+.container-main h1, .container-main .main-content {
   max-width: 680px;
   width: 100%;
   margin: 0 auto; }
 
 .container-main .value-p .text h1 {
-  color: #484848;
+  color: #222222;
   font-size: 48px;
   text-transform: capitalize;
   font-weight: 800;
   margin: 32px 0 8px 0; }
 
-.container-main .value-p .text p, .container-main .value-p p, .container-main .featured .featured-title h2, .container-main .r-l-wrap .main-content .text h2 {
+.container-main h1 {
+  color: #222222;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 32px; }
+
+.container-main .value-p .text p, .container-main .value-p p, .container-main .featured .featured-title h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 8px;
@@ -362,14 +383,14 @@ footer {
   letter-spacing: 0.5px;
   margin-bottom: 8px; }
 
-.container-main .section-reviews .review .popover p, .container-main .rev .review .popover p {
+.container-main .section-reviews .review .popover p {
   font-size: 16px;
   color: #484848;
   letter-spacing: 0.2px;
   line-height: 20px;
   margin-bottom: 4px; }
 
-.container-main .featured .featured-title p, .container-main .r-l-wrap .main-content {
+.container-main .featured .featured-title p, .container-main .main-content p {
   font-size: 21px;
   color: #222222;
   line-height: 30px;
@@ -388,76 +409,42 @@ footer {
   font-weight: 400;
   letter-spacing: 0.5px; }
 
-.container-main .r-l-wrap {
-  display: flex;
-  align-items: flex-start;
+.container-main {
   margin-top: 90px; }
-  .container-main .r-l-wrap .picture-title-wrap {
-    display: flex;
-    flex-direction: column;
-    width: 130px;
-    position: fixed;
-    top: 90px; }
-    .container-main .r-l-wrap .picture-title-wrap img {
-      width: 130px;
-      height: 130px;
-      object-fit: cover; }
-    .container-main .r-l-wrap .picture-title-wrap h3 {
-      font-size: 18px; }
-  .container-main .r-l-wrap .main-content {
+  .container-main h1 {
+    font-family: 'EB Garamond', serif; }
+  .container-main .main-content {
     font-family: 'Caladea', serif; }
-    .container-main .r-l-wrap .main-content .text p {
-      margin-bottom: 32px; }
-      .container-main .r-l-wrap .main-content .text p span {
-        text-decoration: underline; }
-    .container-main .r-l-wrap .main-content .texts p {
-      margin-bottom: 32px; }
-      .container-main .r-l-wrap .main-content .texts p mark {
-        background-color: #Ff77ff; }
-    .container-main .r-l-wrap .main-content .texts p {
-      margin-bottom: 32px; }
-
-.container-main .rev {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .container-main .rev .review .popover {
-    max-width: 336px;
-    padding: 16px 24px;
-    border-radius: 10px;
-    box-shadow: 0px 14px 34px rgba(23, 55, 87, 0.1);
-    margin-top: 50px;
-    margin-bottom: 24px;
-    color: #222222;
-    position: relative; }
-    .container-main .rev .review .popover::after {
-      content: "";
-      position: absolute;
-      bottom: -16px;
-      left: 16px;
-      width: 0;
-      height: 0;
-      border-top: 16px solid #ffffff;
-      border-right: 24px solid transparent; }
-    .container-main .rev .review .popover p {
-      font-family: 'Caladea', serif; }
-  .container-main .rev .review .img-name-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 260px; }
-    .container-main .rev .review .img-name-wrap img {
-      width: 40px;
-      height: 40px;
-      object-fit: cover;
-      border-radius: 100%; }
-    .container-main .rev .review .img-name-wrap ul {
-      text-transform: uppercase;
-      font-size: 12px;
+    .container-main .main-content p {
+      margin-bottom: 24px; }
+      .container-main .main-content p .letter-box {
+        color: orange;
+        float: left;
+        margin: 10px 10px 4px 0;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 4px 0 5px;
+        font-size: 60px;
+        line-height: 60px;
+        border-top: 3px solid black;
+        border-left: 3px solid black; }
+    .container-main .main-content p .uppercase-italic {
       font-family: 'Oswald', sans-serif;
       font-weight: 300;
-      letter-spacing: 0.5px;
-      margin-right: 16px;
-      color: #222222; }
-      .container-main .rev .review .img-name-wrap ul .name {
-        margin-bottom: 6px; }
+      color: orange;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 27px;
+      float: right;
+      width: 45%;
+      border-bottom: 4px solid #282828;
+      border-right: 4px solid #282828;
+      padding: 10px 0 24px 10px;
+      margin: 14px 0 24px 0; }
+  .container-main .images {
+    margin-bottom: 32px; }
+    .container-main .images img {
+      max-width: 33%; }
