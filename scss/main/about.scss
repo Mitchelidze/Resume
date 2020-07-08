@@ -8,11 +8,11 @@
     h1 {
         @extend %title1-2;
         @extend %position-article;
-        font-family: 'EB Garamond', serif;
+        font-family: 'EB Garamond';
     }
     .main-content {
         @extend %position-article;
-        font-family: 'Caladea', serif;
+        font-family: 'Caladea';
         p {
             @extend %text-body-lg;
             margin-bottom: 24px;

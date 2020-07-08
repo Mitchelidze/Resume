@@ -1,6 +1,7 @@
 @import '../modules/variable.scss';
 @import '../modules/classes.scss';
 @import '../modules/mixins.scss';
+@import '../basic/font.scss';
 
 .container-main {
     @extend %position;
@@ -8,8 +9,8 @@
         @include display(flex);
         @include flex-property(space-between,center);
         @include t-transform(capitalize);
-        @extend %text-nav;
-        font-family: 'Josefin Sans', sans-serif;
+        // @extend %text-nav;
+        font-family: 'Open Sans';
         position: fixed;
         top: 0;
         height: 66px;
@@ -18,7 +19,7 @@
         .logo-nav {
             @include display(flex);
             @include flex-property(flex-start,center);
-            ul {
+            .nav-ul {
                 @include display(flex);
                 .nav-li {
                     margin-right: 32px;
@@ -28,16 +29,16 @@
     }
     .value-p {
         @include col-center;
-        font-family: 'EB Garamond', serif;
+        font-family: 'EB Garamond';
         margin-bottom: 160px;
         margin-top: 90px;
-        .text {
+        .text-value {
             text-align: center;
            h1 {
                @extend %title1;
            }
            p {
-            @extend %title2; 
+            font-weight: 400;
             line-height: 28px; 
            }
         }
@@ -59,17 +60,17 @@
         }
     }
     .featured {
-        .featured-title {
+        .featured-text {
             @include col-center;
             text-align: center;
-            h2 {
+            .featured-ttl {
                 @include t-transform(uppercase);
                 @extend %title2;
-                font-family: 'Oswald', sans-serif;
+                font-family: 'Open Sans';
             }
-            p {
+            .featured-sub-ttl {
                 @extend %text-body-lg;
-                font-family: 'Caladea', serif;
+                font-family: 'Caladea';
                 margin-bottom: 32px;
             }
         }
@@ -82,8 +83,8 @@
                 a {
                     @include t-transform(uppercase);
                     @include t-decoration(underline);
-                    font-family: 'Oswald', sans-serif;
-                    font-weight: 400;
+                    font-family: 'Open Sans';
+                    font-weight: 600;
                     letter-spacing: 0.5px;
                     margin-right: 16px;
                     color: $main-color;
@@ -104,10 +105,11 @@
                 h3 {
                     @include t-transform(uppercase);
                     @extend %title3;
-                    font-family: 'Oswald', sans-serif;
+                    font-family: 'Open Sans';
+                    font-weight: 800;
                 }
                 p {
-                    font-family: 'Caladea', serif;
+                    font-family: 'Caladea';
                     @extend %text-body-medium;
                 }
                 img {
@@ -116,6 +118,7 @@
                 }
                 span {
                     @include t-decoration(underline);
+                    font-family: 'Open Sans';
                 }
             }
         }
@@ -143,13 +146,13 @@
                 }
                 p {
                     @extend %text-base;
-                    font-family: 'Caladea', serif;
+                    font-family: 'Caladea';
                 }
              }
              .img-name-wrap {
                  @include display(flex);
                  @include flex-property(space-between,center);
-                 max-width: 260px;
+                 max-width: 300px;
                  img {
                      width: 40px;
                      height: 40px;
@@ -159,9 +162,7 @@
                  ul {
                      @include t-transform(uppercase);
                      font-size: $text-xs;         
-                     font-family: 'Oswald', sans-serif;
-                     font-weight: 300;
-                     letter-spacing: 0.5px;
+                     font-family: 'Open Sans';
                      margin-right: 16px;
                      color: $main-color;
                      .name {
@@ -186,8 +187,7 @@ footer {
             margin-bottom: 16px;
         }
         .about-mail-wrap {
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: 300;
+            font-family: 'Open Sans';
             p {
                 font-size: $text-medium;
                 margin-bottom: 4px;
@@ -203,14 +203,34 @@ footer {
             flex-wrap: wrap;
             margin: 32px 0 32px 0;
             padding: 16px 0 16px 0;
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: 300;
+            font-family: 'Open Sans';
             font-size: $text-medium;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li {
+                    a {
+                        &::after {
+                            content: "";
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 100%;
+                            background-color: $color-white;
+                            display: block;
+                        }
+                    }
+                }
+            }
             ul {
                 @include display(flex);
                 li {
-                    margin-right: 4px;
+                    margin-left: 8px;
                     a {
+                        ion-icon {
+                            font-size: 24px;
+                            color: $color-white;
+                          }
                         color: $color-white;
                     }
                 } 
