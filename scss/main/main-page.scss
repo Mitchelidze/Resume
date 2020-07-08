@@ -74,12 +74,12 @@
                 margin-bottom: 32px;
             }
         }
-        ul {
+        .feat-ul {
             @include display(flex);
             @include flex-property(center,center);
             flex-wrap: wrap;
             margin-bottom: 32px;
-            li {
+            .feat-li {
                 a {
                     @include t-transform(uppercase);
                     @include t-decoration(underline);
@@ -97,26 +97,26 @@
             flex-wrap: wrap;
             margin-top: 42px;
             .box {
-                @include shadow;
+                @extend %shadow;
                 max-width: 330px;
                 padding: 24px;
                 margin: 8px;
                 border-radius: 8px;
-                h3 {
+                .box-ttl {
                     @include t-transform(uppercase);
                     @extend %title3;
                     font-family: 'Open Sans';
                     font-weight: 800;
                 }
-                p {
+                .box-text {
                     font-family: 'Caladea';
                     @extend %text-body-medium;
                 }
-                img {
+                .box-img {
                     max-width: 282px;
                     margin-bottom: 16px;
                 }
-                span {
+                .box-case {
                     @include t-decoration(underline);
                     font-family: 'Open Sans';
                 }
@@ -131,7 +131,7 @@
         .review {
             align-self: flex-start;
             .popover {
-                @include popover;
+                @extend %popover;
                 @include position(relative);
                 &::after {
                     content: "";
@@ -144,7 +144,7 @@
                     border-right: 24px solid transparent;
      
                 }
-                p {
+                .popover-text {
                     @extend %text-base;
                     font-family: 'Caladea';
                 }
@@ -153,11 +153,11 @@
                  @include display(flex);
                  @include flex-property(space-between,center);
                  max-width: 300px;
-                 img {
-                     width: 40px;
-                     height: 40px;
-                     object-fit: cover;
-                     border-radius: 100%;
+                 .popover-img {
+                            width: 40px;
+                            height: 40px;
+                            object-fit: cover;
+                            border-radius: 100%;
                  }
                  ul {
                      @include t-transform(uppercase);
@@ -182,7 +182,7 @@ footer {
     .footer-content {
         @extend %position;
         width: 86%;
-        h2 {
+        .footer-ttl {
             font-size: $text-2xl;
             margin-bottom: 16px;
         }
@@ -199,17 +199,17 @@ footer {
         .copy-social {
             @include display(flex);
             @include flex-property(space-between,flex-start);
-            @include tb-border-gray;
+            @extend %tb-border-gray;
             flex-wrap: wrap;
             margin: 32px 0 32px 0;
             padding: 16px 0 16px 0;
             font-family: 'Open Sans';
             font-size: $text-medium;
-            ul {
+            .footer-nav-ul {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                li {
+                .footer-nav-li {
                     a {
                         &::after {
                             content: "";

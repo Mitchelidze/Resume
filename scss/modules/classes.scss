@@ -71,3 +71,29 @@
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+%popover {
+    max-width: 336px;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0px 14px 34px rgba(23, 55, 87, 0.1);
+    margin-top: 50px;
+    margin-bottom: 24px;
+    color: $main-color;
+}
+
+%shadow {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 14px 34px rgba(23, 55, 87, 0.1);
+}
+
+%tb-border-gray {
+    border-top: 1px solid $border-gray;
+    border-bottom: 1px solid $border-gray;
+}
+
+%col-center {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 620px;
+}
