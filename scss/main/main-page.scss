@@ -9,7 +9,7 @@
         @include display(flex);
         @include flex-property(space-between,center);
         @include t-transform(capitalize);
-        // @extend %text-nav;
+        @extend %text-nav;
         font-family: 'Open Sans';
         position: fixed;
         top: 0;
@@ -23,34 +23,39 @@
                 @include display(flex);
                 .nav-li {
                     margin-right: 32px;
+                    a {
+                        color: $main-color;
+                    }
                 }
             }
         }
     }
     .value-p {
-        @include col-center;
+        @extend %col-center;
         font-family: 'EB Garamond';
-        margin-bottom: 160px;
         margin-top: 90px;
         .text-value {
             text-align: center;
-           h1 {
+           .value-ttl {
                @extend %title1;
            }
-           p {
+           .value-sub-ttl {
+            font-size: $text-2xl;
+            color: $sec-color;
             font-weight: 400;
-            line-height: 28px; 
+            line-height: 28px;
            }
         }
         .banner-img {
             width: 100%;
             margin: 32px 0 32px 0; 
         }
-        p {
+        .value-descr {
             font-size: $text-2xl;
             color: $sec-color;
             line-height: 40px;
             letter-spacing: 0.5px;
+            margin-bottom: 160px; 
           .bold {
               font-weight: 700;
           }
@@ -61,7 +66,7 @@
     }
     .featured {
         .featured-text {
-            @include col-center;
+            @extend %col-center;
             text-align: center;
             .featured-ttl {
                 @include t-transform(uppercase);
@@ -127,7 +132,7 @@
         @include display(flex);
         @include flex-property(space-around,center);
         flex-wrap: wrap;
-        margin: 8px;
+        margin-bottom: 64px;
         .review {
             align-self: flex-start;
             .popover {
@@ -189,7 +194,7 @@ footer {
         .about-mail-wrap {
             font-family: 'Open Sans';
             p {
-                font-size: $text-medium;
+                font-size: $text-s;
                 margin-bottom: 4px;
                 a {
                     color: $color-white;
@@ -204,21 +209,31 @@ footer {
             margin: 32px 0 32px 0;
             padding: 16px 0 16px 0;
             font-family: 'Open Sans';
-            font-size: $text-medium;
+            font-size: $text-s;
             .footer-nav-ul {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 .footer-nav-li {
+                    display: flex;
                     a {
+                        @include display(flex);
+                        @include flex-property(center,center);
+                        color: $color-white;
                         &::after {
                             content: "";
                             width: 6px;
                             height: 6px;
                             border-radius: 100%;
                             background-color: $color-white;
+                            margin-left: 6px;
                             display: block;
                         }
+                    }
+                }
+                .footer-nav-li-3 {
+                    a {
+                        color: $color-white;
                     }
                 }
             }
@@ -231,16 +246,15 @@ footer {
                             font-size: 24px;
                             color: $color-white;
                           }
-                        color: $color-white;
                     }
                 } 
             }
         }
         div {
             p {
-                font-family: 'Josefin Sans', sans-serif;
+                font-family: 'Open Sans';
                 font-weight: 300;
-                font-size: $text-medium;
+                font-size: $text-s;
                 a {
                     @include t-decoration(underline);
                     color: $color-white;
