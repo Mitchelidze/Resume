@@ -51,11 +51,40 @@
                 margin: 14px 0 24px 0;
             }
         }
+        p {
+            mark {
+                background-color: rgba(242, 242, 242, 1);
+            }
+        }
     }
     .images {
+        @include display(flex);
+        @include flex-property(center,center);
+        flex-wrap: wrap;
         margin-bottom: 32px;
+        width: 100%;
         img {
-            max-width: 33%;
+            max-width: 40%;
+            margin: 8px;
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .container-main {
+        .main-content {
+            p {
+                .uppercase-italic {
+                    width: 45%;
+                border-bottom: 4px solid #282828;
+                border-top: 4px solid #282828;
+                border-right: none;
+                padding: 16px 0 16px 10px;
+                margin: 16px 0 16px 0;
+                }
+            }
         }
     }
 }

@@ -19,6 +19,12 @@
         .logo-nav {
             @include display(flex);
             @include flex-property(flex-start,center);
+            .logo {
+                width: 40px;
+                height: 40px;
+                background-color: $main-color;
+                margin-right: 40px;
+            } 
             .nav-ul {
                 @include display(flex);
                 .nav-li {
@@ -258,6 +264,49 @@ footer {
                 a {
                     @include t-decoration(underline);
                     color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .container-main {
+        .navigation {
+            .r-pdf {
+                @include display(none);
+            }
+        }
+        .section-reviews {
+            .none {
+                @include display(none);
+            }
+        }
+    }
+    footer {
+        .footer-content {
+            .about-mail-wrap {
+                p {
+                    font-size: $text-base;
+                }
+            }
+            .copy-social {
+                @include flex-property(center,center);
+                flex-direction: column;
+                font-size: $text-base;
+                .copyrigh {
+                    font-size: $text-base;
+                }
+                .footer-nav-ul {
+                    padding: 16px;
+                    font-size: $text-base;
+                }
+            }
+            .git {
+                p {
+                    font-size: $text-base;
                 }
             }
         }
