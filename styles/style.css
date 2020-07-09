@@ -162,7 +162,7 @@ a {
   /* Legacy iOS */ }
 
 .container-main, footer .footer-content {
-  max-width: 1270px;
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto; }
 
@@ -216,7 +216,7 @@ a {
   line-height: 26px;
   letter-spacing: 0.3px; }
 
-.container-main .navigation {
+.navigation {
   font-size: 18px;
   color: #222222;
   font-weight: 400;
@@ -245,7 +245,7 @@ footer .footer-content .copy-social {
   max-width: 620px; }
 
 .container-main, footer .footer-content {
-  max-width: 1270px;
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto; }
 
@@ -299,7 +299,7 @@ footer .footer-content .copy-social {
   line-height: 26px;
   letter-spacing: 0.3px; }
 
-.container-main .navigation {
+.navigation {
   font-size: 18px;
   color: #222222;
   font-weight: 400;
@@ -447,7 +447,7 @@ footer .footer-content .copy-social {
   src: local("Caladea Bold"), local("Caladea-Bold"), url("../../fonts/caladea/caladea-v1-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/caladea/caladea-v1-latin-700.woff2") format("woff2"), url("../../fonts/caladea/caladea-v1-latin-700.woff") format("woff"), url("../../fonts/caladea/caladea-v1-latin-700.ttf") format("truetype"), url("../../fonts/caladea/caladea-v1-latin-700.svg#Caladea") format("svg");
   /* Legacy iOS */ }
 
-.container-main .navigation {
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -455,24 +455,45 @@ footer .footer-content .copy-social {
   font-family: 'Open Sans';
   position: fixed;
   top: 0;
+  z-index: 1;
+  padding-right: 5%;
+  padding-left: 5%;
   height: 66px;
-  width: 90%;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #ffffff; }
-  .container-main .navigation .logo-nav {
+  .navigation .logo-nav {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
-    .container-main .navigation .logo-nav .logo {
+    .navigation .logo-nav .logo {
       width: 40px;
       height: 40px;
       background-color: #222222;
       margin-right: 40px; }
-    .container-main .navigation .logo-nav .nav-ul {
+    .navigation .logo-nav .nav-ul {
       display: flex; }
-      .container-main .navigation .logo-nav .nav-ul .nav-li {
+      .navigation .logo-nav .nav-ul .nav-li {
         margin-right: 32px; }
-        .container-main .navigation .logo-nav .nav-ul .nav-li a {
+        .navigation .logo-nav .nav-ul .nav-li a {
           color: #222222; }
+  .navigation .r-pdf a {
+    color: #222222;
+    position: relative; }
+    .navigation .r-pdf a::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #484848;
+      opacity: 0;
+      transition: all 0.2s linear; }
+    .navigation .r-pdf a:hover::after {
+      opacity: 1;
+      bottom: -1px; }
 
 .container-main .value-p {
   font-family: 'EB Garamond';
@@ -607,7 +628,7 @@ footer {
     footer .footer-content .copy-social {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       flex-wrap: wrap;
       margin: 32px 0 32px 0;
       padding: 16px 0 16px 0;
@@ -650,9 +671,9 @@ footer {
         color: #ffffff; }
 
 @media (max-width: 480px) {
-  .container-main .navigation .r-pdf {
+  .navigation .r-pdf {
     display: none; }
-  .container-main .section-reviews .none {
+  .section-reviews .none {
     display: none; }
   footer .footer-content .about-mail-wrap p {
     font-size: 16px; }
@@ -670,7 +691,7 @@ footer {
     font-size: 16px; } }
 
 .container-main, footer .footer-content {
-  max-width: 1270px;
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto; }
 
@@ -724,7 +745,7 @@ footer {
   line-height: 26px;
   letter-spacing: 0.3px; }
 
-.container-main .navigation {
+.navigation {
   font-size: 18px;
   color: #222222;
   font-weight: 400;

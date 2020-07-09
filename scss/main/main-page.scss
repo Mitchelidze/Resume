@@ -3,39 +3,68 @@
 @import '../modules/mixins.scss';
 @import '../basic/font.scss';
 
-.container-main {
-    @extend %position;
-    .navigation {
+
+
+
+.navigation {
+    @include display(flex);
+    @include flex-property(space-between,center);
+    @include t-transform(capitalize);
+    @extend %text-nav;
+    font-family: 'Open Sans';
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 66px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color-white;
+    .logo-nav {
         @include display(flex);
-        @include flex-property(space-between,center);
-        @include t-transform(capitalize);
-        @extend %text-nav;
-        font-family: 'Open Sans';
-        position: fixed;
-        top: 0;
-        height: 66px;
-        width: 90%;
-        background-color: $color-white;
-        .logo-nav {
+        @include flex-property(flex-start,center);
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-color: $main-color;
+            margin-right: 40px;
+        } 
+        .nav-ul {
             @include display(flex);
-            @include flex-property(flex-start,center);
-            .logo {
-                width: 40px;
-                height: 40px;
-                background-color: $main-color;
-                margin-right: 40px;
-            } 
-            .nav-ul {
-                @include display(flex);
-                .nav-li {
-                    margin-right: 32px;
-                    a {
-                        color: $main-color;
-                    }
+            .nav-li {
+                margin-right: 32px;
+                a {
+                    color: $main-color;
                 }
             }
         }
     }
+    .r-pdf {
+        a {
+            color: $main-color;
+            @include position(relative);
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $sec-color;
+                opacity: 0;
+                transition: all 0.2s linear;
+            }
+            &:hover::after {
+                opacity: 1;
+                bottom: -1px;
+            }
+        }
+    }
+}
+.container-main {
+    @extend %position;
     .value-p {
         @extend %col-center;
         font-family: 'EB Garamond';
@@ -153,13 +182,12 @@
                     height: 0;
                     border-top: 16px solid #ffffff;
                     border-right: 24px solid transparent;
-     
                 }
                 .popover-text {
                     @extend %text-base;
                     font-family: 'Caladea';
                 }
-             }
+            }
              .img-name-wrap {
                  @include display(flex);
                  @include flex-property(space-between,center);
@@ -209,7 +237,7 @@ footer {
         }
         .copy-social {
             @include display(flex);
-            @include flex-property(space-between,flex-start);
+            @include flex-property(space-between,center);
             @extend %tb-border-gray;
             flex-wrap: wrap;
             margin: 32px 0 32px 0;
@@ -273,16 +301,14 @@ footer {
 
 
 @media (max-width: 480px) {
-    .container-main {
-        .navigation {
-            .r-pdf {
-                @include display(none);
-            }
+    .navigation {
+        .r-pdf {
+            @include display(none);
         }
-        .section-reviews {
-            .none {
-                @include display(none);
-            }
+    }
+    .section-reviews {
+        .none {
+            @include display(none);
         }
     }
     footer {
