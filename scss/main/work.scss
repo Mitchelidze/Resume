@@ -1,3 +1,39 @@
 @import '../modules/variable.scss';
 @import '../modules/classes.scss';
 @import '../modules/mixins.scss';
+
+
+.container {
+    @extend %position;
+    @include display(flex);
+    @include flex-property(space-between,center);
+    flex-wrap: wrap;
+    margin-top: 120px;
+    .text-content {
+        max-width: 720px;
+        padding: 16px;
+        font-size: $text-medium;
+    }
+    .cta-tools {
+        max-width: 400px;
+        width: 100%;
+        padding: 16px;
+        .cta {
+            @include display(flex);
+            @include flex-property(space-between,center);
+        }
+        .apps-tools {
+            h2 {
+                @extend %title3;
+            }
+            p {
+                font-size: $text-medium;
+            }
+            .more {
+                @include t-decoration(underline);
+                @include t-transform(uppercase);
+                font-weight: 600;
+            }
+        }
+    }
+}
