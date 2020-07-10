@@ -65,6 +65,7 @@
 }
 .container-main {
     @extend %position;
+    padding-top: 120px;
     .value-p {
         @extend %col-center;
         font-family: 'EB Garamond';
