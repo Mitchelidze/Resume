@@ -6,13 +6,19 @@
 .container {
     @extend %position;
     @include display(flex);
-    @include flex-property(space-between,center);
+    @include flex-property(space-between,flex-start);
     flex-wrap: wrap;
     padding-top: 120px;
     .text-content {
         max-width: 720px;
         padding: 16px;
-        font-size: $text-medium;
+        @extend %text-body-lg;
+        font-family: 'EB Garamond';
+        .bold {
+            font-weight: 600;
+            margin-bottom: 24px;
+            @extend %title3;
+        }
     }
     .cta-tools {
         max-width: 400px;
@@ -21,11 +27,57 @@
         .cta {
             @include display(flex);
             @include flex-property(space-around,center);
-            border-bottom: 4px solid gray;
+            border-bottom: 2px solid #dedede;
             padding-bottom: 16px;
+            .prof-img {
+                width: 72px;
+                height: 72px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+            .ttl-btn {
+                p {
+                    @include display(flex);
+                    @include flex-property(center,center);
+                    font-size: $text-medium;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                    &::before {
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 100%;
+                        background-color: #1FEB89;
+                        margin-right: 6px;
+                        display: block;
+                    }
+                }
+                .btn {
+                    a {
+                        @include display(flex);
+                        @include flex-property(center,center);
+                        background-color: #404AE2;
+                        border-radius: 8px;
+                        text-align: center;
+                        padding: 12px 32px 12px 32px;
+                        ion-icon {
+                            font-size: 20px;
+                            color: $color-white;
+                            margin-right: 4px;
+                        }
+                        span {
+                            font-size: $text-medium;
+                            color: $color-white;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
         }
         .apps-tools {
             padding-top: 16px;
+            border-bottom: 2px solid #dedede;
+            padding-bottom: 16px;
             h2 {
                 @extend %title3;
             }
