@@ -478,6 +478,9 @@ footer .footer-content .copy-social {
         margin-right: 32px; }
         .navigation .logo-nav .nav-ul .nav-li a {
           color: #222222; }
+  @media (max-width: 480px) {
+    .navigation .r-pdf {
+      display: none; } }
   .navigation .r-pdf a {
     color: #222222;
     position: relative; }
@@ -542,6 +545,9 @@ footer .footer-content .copy-social {
       letter-spacing: 0.5px;
       margin-right: 16px;
       color: #222222; }
+      @media (max-width: 480px) {
+        .container-main .featured .feat-ul .feat-li a {
+          line-height: 30px; } }
   .container-main .featured .boxes {
     display: flex;
     justify-content: space-around;
@@ -604,6 +610,9 @@ footer .footer-content .copy-social {
           color: #AAB7C4; }
           .container-main .section-reviews .review .img-name-wrap ul .name {
             margin-bottom: 6px; }
+    @media (max-width: 480px) {
+      .container-main .section-reviews .none {
+        display: none; } }
 
 footer {
   background-color: #222222;
@@ -621,6 +630,9 @@ footer {
       footer .footer-content .about-mail-wrap p {
         font-size: 14px;
         margin-bottom: 4px; }
+        @media (max-width: 480px) {
+          footer .footer-content .about-mail-wrap p {
+            font-size: 16px; } }
         footer .footer-content .about-mail-wrap p a {
           color: #ffffff; }
     footer .footer-content .copy-social {
@@ -632,6 +644,17 @@ footer {
       padding: 16px 0 16px 0;
       font-family: 'Open Sans', sans-serif;
       font-size: 14px; }
+      @media (max-width: 480px) {
+        footer .footer-content .copy-social {
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-size: 16px; }
+          footer .footer-content .copy-social .copyrigh {
+            font-size: 16px; }
+          footer .footer-content .copy-social .footer-nav-ul {
+            padding: 16px;
+            font-size: 16px; } }
       footer .footer-content .copy-social .footer-nav-ul {
         display: flex;
         align-items: center;
@@ -660,33 +683,16 @@ footer {
           footer .footer-content .copy-social ul li a ion-icon {
             font-size: 24px;
             color: #ffffff; }
-    footer .footer-content div p {
+    footer .footer-content .git p {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 14px; }
-      footer .footer-content div p a {
+      @media (max-width: 480px) {
+        footer .footer-content .git p {
+          font-size: 16px; } }
+      footer .footer-content .git p a {
         text-decoration: underline;
         color: #ffffff; }
-
-@media (max-width: 480px) {
-  .navigation .r-pdf {
-    display: none; }
-  .section-reviews .none {
-    display: none; }
-  footer .footer-content .about-mail-wrap p {
-    font-size: 16px; }
-  footer .footer-content .copy-social {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 16px; }
-    footer .footer-content .copy-social .copyrigh {
-      font-size: 16px; }
-    footer .footer-content .copy-social .footer-nav-ul {
-      padding: 16px;
-      font-size: 16px; }
-  footer .footer-content .git p {
-    font-size: 16px; } }
 
 .container-main, footer .footer-content, .container {
   max-width: 1440px;
@@ -930,6 +936,9 @@ footer .footer-content .copy-social {
     padding: 16px 16px 16px 24px;
     font-family: 'Open Sans', sans-serif;
     border-left: 2px solid #dedede; }
+    @media (max-width: 480px) {
+      .container .cta-tools .cta-tools {
+        display: none; } }
     .container .cta-tools .cta {
       display: flex;
       justify-content: space-between;

@@ -42,6 +42,9 @@
         }
     }
     .r-pdf {
+        @media (max-width: 480px) {
+            display: none;
+        }
         a {
             color: $main-color;
             @include position(relative);
@@ -129,6 +132,9 @@
                     letter-spacing: 0.5px;
                     margin-right: 16px;
                     color: $main-color;
+                    @media (max-width: 480px) {
+                        line-height: 30px;
+                    }
                 }
             }
         }
@@ -211,6 +217,11 @@
                  }
              }
         } 
+        .none {
+            @media (max-width: 480px) {
+                display: none;
+            }
+        }
     }
 }
 footer {
@@ -231,6 +242,9 @@ footer {
             p {
                 font-size: $text-s;
                 margin-bottom: 4px;
+                @media (max-width: 480px) {
+                    font-size: $text-base;
+                }
                 a {
                     color: $color-white;
                 }
@@ -245,6 +259,18 @@ footer {
             padding: 16px 0 16px 0;
             font-family: 'Open Sans', sans-serif;
             font-size: $text-s;
+            @media (max-width: 480px) {
+                @include flex-property(center,center);
+                flex-direction: column;
+                font-size: $text-base;
+                .copyrigh {
+                    font-size: $text-base;
+                }
+                .footer-nav-ul {
+                    padding: 16px;
+                    font-size: $text-base;
+                }
+            }
             .footer-nav-ul {
                 display: flex;
                 align-items: center;
@@ -285,11 +311,14 @@ footer {
                 } 
             }
         }
-        div {
+        .git {
             p {
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 300;
                 font-size: $text-s;
+                @media (max-width: 480px) {
+                    font-size: $text-base;
+                }
                 a {
                     @include t-decoration(underline);
                     color: $color-white;
@@ -300,42 +329,3 @@ footer {
 }
 
 
-
-@media (max-width: 480px) {
-    .navigation {
-        .r-pdf {
-            @include display(none);
-        }
-    }
-    .section-reviews {
-        .none {
-            @include display(none);
-        }
-    }
-    footer {
-        .footer-content {
-            .about-mail-wrap {
-                p {
-                    font-size: $text-base;
-                }
-            }
-            .copy-social {
-                @include flex-property(center,center);
-                flex-direction: column;
-                font-size: $text-base;
-                .copyrigh {
-                    font-size: $text-base;
-                }
-                .footer-nav-ul {
-                    padding: 16px;
-                    font-size: $text-base;
-                }
-            }
-            .git {
-                p {
-                    font-size: $text-base;
-                }
-            }
-        }
-    }
-}
