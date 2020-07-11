@@ -452,7 +452,7 @@ footer .footer-content .copy-social {
   justify-content: space-between;
   align-items: center;
   text-transform: capitalize;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -498,7 +498,7 @@ footer .footer-content .copy-social {
 .container-main {
   padding-top: 120px; }
   .container-main .value-p {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', serif;
     margin-top: 90px; }
     .container-main .value-p .text-value {
       text-align: center; }
@@ -524,9 +524,9 @@ footer .footer-content .copy-social {
     text-align: center; }
     .container-main .featured .featured-text .featured-ttl {
       text-transform: uppercase;
-      font-family: 'Open Sans'; }
+      font-family: 'Open Sans', sans-serif; }
     .container-main .featured .featured-text .featured-sub-ttl {
-      font-family: 'Caladea';
+      font-family: 'Caladea', serif;
       margin-bottom: 32px; }
   .container-main .featured .feat-ul {
     display: flex;
@@ -537,7 +537,7 @@ footer .footer-content .copy-social {
     .container-main .featured .feat-ul .feat-li a {
       text-transform: uppercase;
       text-decoration: underline;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', sans-serif;
       font-weight: 600;
       letter-spacing: 0.5px;
       margin-right: 16px;
@@ -555,10 +555,10 @@ footer .footer-content .copy-social {
       border-radius: 8px; }
       .container-main .featured .boxes .box .box-ttl {
         text-transform: uppercase;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans', sans-serif;
         font-weight: 800; }
       .container-main .featured .boxes .box .box-text {
-        font-family: 'Caladea'; }
+        font-family: 'Caladea', serif; }
       .container-main .featured .boxes .box .box-img {
         max-width: 282px;
         margin-bottom: 16px; }
@@ -585,7 +585,7 @@ footer .footer-content .copy-social {
           border-top: 16px solid #ffffff;
           border-right: 24px solid transparent; }
         .container-main .section-reviews .review .popover .popover-text {
-          font-family: 'Caladea'; }
+          font-family: 'Caladea', serif; }
       .container-main .section-reviews .review .img-name-wrap {
         display: flex;
         justify-content: space-between;
@@ -599,9 +599,9 @@ footer .footer-content .copy-social {
         .container-main .section-reviews .review .img-name-wrap ul {
           text-transform: uppercase;
           font-size: 12px;
-          font-family: 'Open Sans';
+          font-family: 'Open Sans', sans-serif;
           margin-right: 16px;
-          color: #222222; }
+          color: #AAB7C4; }
           .container-main .section-reviews .review .img-name-wrap ul .name {
             margin-bottom: 6px; }
 
@@ -617,7 +617,7 @@ footer {
       font-size: 30px;
       margin-bottom: 16px; }
     footer .footer-content .about-mail-wrap {
-      font-family: 'Open Sans'; }
+      font-family: 'Open Sans', sans-serif; }
       footer .footer-content .about-mail-wrap p {
         font-size: 14px;
         margin-bottom: 4px; }
@@ -630,7 +630,7 @@ footer {
       flex-wrap: wrap;
       margin: 32px 0 32px 0;
       padding: 16px 0 16px 0;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', sans-serif;
       font-size: 14px; }
       footer .footer-content .copy-social .footer-nav-ul {
         display: flex;
@@ -661,7 +661,7 @@ footer {
             font-size: 24px;
             color: #ffffff; }
     footer .footer-content div p {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 14px; }
       footer .footer-content div p a {
@@ -920,20 +920,21 @@ footer .footer-content .copy-social {
   .container .text-content {
     max-width: 720px;
     padding: 16px;
-    font-family: 'EB Garamond'; }
+    font-family: 'EB Garamond', serif; }
     .container .text-content .bold {
       font-weight: 600;
       margin-bottom: 24px; }
   .container .cta-tools {
-    max-width: 400px;
+    max-width: 370px;
     width: 100%;
-    padding: 16px; }
+    padding: 16px 16px 16px 24px;
+    font-family: 'Open Sans', sans-serif;
+    border-left: 2px solid #dedede; }
     .container .cta-tools .cta {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #dedede;
-      padding-bottom: 16px; }
+      padding-bottom: 40px; }
       .container .cta-tools .cta .prof-img {
         width: 72px;
         height: 72px;
@@ -944,12 +945,13 @@ footer .footer-content .copy-social {
         justify-content: center;
         align-items: center;
         font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 8px; }
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #292929; }
         .container .cta-tools .cta .ttl-btn p::before {
           content: "";
-          width: 6px;
-          height: 6px;
+          width: 8px;
+          height: 8px;
           border-radius: 100%;
           background-color: #1FEB89;
           margin-right: 6px;
@@ -958,8 +960,10 @@ footer .footer-content .copy-social {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-transform: Capitalize;
         background-color: #404AE2;
         border-radius: 8px;
+        letter-spacing: 0.4px;
         text-align: center;
         padding: 12px 32px 12px 32px; }
         .container .cta-tools .cta .ttl-btn .btn a ion-icon {
@@ -972,11 +976,13 @@ footer .footer-content .copy-social {
           font-weight: 500; }
     .container .cta-tools .apps-tools {
       padding-top: 16px;
-      border-bottom: 2px solid #dedede;
       padding-bottom: 16px; }
       .container .cta-tools .apps-tools p {
-        font-size: 18px; }
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 8px; }
       .container .cta-tools .apps-tools .more {
         text-decoration: underline;
         text-transform: uppercase;
-        font-weight: 600; }
+        font-weight: 600;
+        margin-bottom: 24px; }

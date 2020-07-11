@@ -13,7 +13,7 @@
         max-width: 720px;
         padding: 16px;
         @extend %text-body-lg;
-        font-family: 'EB Garamond';
+        font-family: 'EB Garamond', serif;
         .bold {
             font-weight: 600;
             margin-bottom: 24px;
@@ -21,14 +21,15 @@
         }
     }
     .cta-tools {
-        max-width: 400px;
+        max-width: 370px;
         width: 100%;
-        padding: 16px;
+        padding: 16px 16px 16px 24px;
+        font-family: 'Open Sans', sans-serif;
+        border-left: 2px solid #dedede;
         .cta {
             @include display(flex);
-            @include flex-property(space-around,center);
-            border-bottom: 2px solid #dedede;
-            padding-bottom: 16px;
+            @include flex-property(space-between,center);
+            padding-bottom: 40px;
             .prof-img {
                 width: 72px;
                 height: 72px;
@@ -40,12 +41,13 @@
                     @include display(flex);
                     @include flex-property(center,center);
                     font-size: $text-medium;
-                    font-weight: 500;
+                    font-weight: 600;
                     margin-bottom: 8px;
+                    color: #292929;
                     &::before {
                         content: "";
-                        width: 6px;
-                        height: 6px;
+                        width: 8px;
+                        height: 8px;
                         border-radius: 100%;
                         background-color: #1FEB89;
                         margin-right: 6px;
@@ -56,8 +58,10 @@
                     a {
                         @include display(flex);
                         @include flex-property(center,center);
+                        @include t-transform(Capitalize);
                         background-color: #404AE2;
                         border-radius: 8px;
+                        letter-spacing: 0.4px;
                         text-align: center;
                         padding: 12px 32px 12px 32px;
                         ion-icon {
@@ -76,18 +80,20 @@
         }
         .apps-tools {
             padding-top: 16px;
-            border-bottom: 2px solid #dedede;
             padding-bottom: 16px;
             h2 {
                 @extend %title3;
             }
             p {
                 font-size: $text-medium;
+                line-height: 26px;
+                margin-bottom: 8px;
             }
             .more {
                 @include t-decoration(underline);
                 @include t-transform(uppercase);
                 font-weight: 600;
+                margin-bottom: 24px;
             }
         }
     }

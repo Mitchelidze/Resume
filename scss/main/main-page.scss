@@ -11,7 +11,7 @@
     @include flex-property(space-between,center);
     @include t-transform(capitalize);
     @extend %text-nav;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -68,7 +68,7 @@
     padding-top: 120px;
     .value-p {
         @extend %col-center;
-        font-family: 'EB Garamond';
+        font-family: 'EB Garamond', serif;
         margin-top: 90px;
         .text-value {
             text-align: center;
@@ -107,11 +107,11 @@
             .featured-ttl {
                 @include t-transform(uppercase);
                 @extend %title2;
-                font-family: 'Open Sans';
+                font-family: 'Open Sans', sans-serif;
             }
             .featured-sub-ttl {
                 @extend %text-body-lg;
-                font-family: 'Caladea';
+                font-family: 'Caladea', serif;
                 margin-bottom: 32px;
             }
         }
@@ -124,7 +124,7 @@
                 a {
                     @include t-transform(uppercase);
                     @include t-decoration(underline);
-                    font-family: 'Open Sans';
+                    font-family: 'Open Sans', sans-serif;
                     font-weight: 600;
                     letter-spacing: 0.5px;
                     margin-right: 16px;
@@ -146,11 +146,11 @@
                 .box-ttl {
                     @include t-transform(uppercase);
                     @extend %title3;
-                    font-family: 'Open Sans';
+                    font-family: 'Open Sans', sans-serif;
                     font-weight: 800;
                 }
                 .box-text {
-                    font-family: 'Caladea';
+                    font-family: 'Caladea', serif;
                     @extend %text-body-medium;
                 }
                 .box-img {
@@ -186,7 +186,7 @@
                 }
                 .popover-text {
                     @extend %text-base;
-                    font-family: 'Caladea';
+                    font-family: 'Caladea', serif;
                 }
             }
              .img-name-wrap {
@@ -202,9 +202,9 @@
                  ul {
                      @include t-transform(uppercase);
                      font-size: $text-xs;         
-                     font-family: 'Open Sans';
+                     font-family: 'Open Sans', sans-serif;
                      margin-right: 16px;
-                     color: $main-color;
+                     color: #AAB7C4;
                      .name {
                          margin-bottom: 6px;
                      }
@@ -227,7 +227,7 @@ footer {
             margin-bottom: 16px;
         }
         .about-mail-wrap {
-            font-family: 'Open Sans';
+            font-family: 'Open Sans', sans-serif;
             p {
                 font-size: $text-s;
                 margin-bottom: 4px;
@@ -243,7 +243,7 @@ footer {
             flex-wrap: wrap;
             margin: 32px 0 32px 0;
             padding: 16px 0 16px 0;
-            font-family: 'Open Sans';
+            font-family: 'Open Sans', sans-serif;
             font-size: $text-s;
             .footer-nav-ul {
                 display: flex;
@@ -287,7 +287,7 @@ footer {
         }
         div {
             p {
-                font-family: 'Open Sans';
+                font-family: 'Open Sans', sans-serif;
                 font-weight: 300;
                 font-size: $text-s;
                 a {
