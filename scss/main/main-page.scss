@@ -152,6 +152,15 @@
             @include flex-property(space-around,center);
             flex-wrap: wrap;
             margin-top: 42px;
+            // .first {
+            //     background-color: #AFE0F2;
+            // }
+            // .second {
+            //     background-color: #F9CE57;
+            // }
+            // .third {
+            //     background-color: #c2c4f9;
+            // }
             .box {
                 @extend %shadow;
                 max-width: 330px;
