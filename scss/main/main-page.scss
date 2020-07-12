@@ -235,18 +235,38 @@ footer {
         width: 86%;
         .footer-ttl {
             font-size: $text-2xl;
-            margin-bottom: 16px;
+            margin-bottom: 24px;
+            max-width: 640px;
+            line-height: 38px;
         }
         .about-mail-wrap {
             font-family: 'Open Sans', sans-serif;
             p {
-                font-size: $text-s;
+                font-size: $text-medium;
+                line-height: 22px;
                 margin-bottom: 4px;
                 @media (max-width: 480px) {
                     font-size: $text-base;
                 }
                 a {
                     color: $color-white;
+                    font-weight: 600;
+                    @include position(relative);
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $color-white;
+                opacity: 0;
+                transition: all 0.2s linear;
+            }
+            &:hover::after {
+                opacity: 1;
+                bottom: -1px;
+            }
                 }
             }
         }
@@ -260,14 +280,10 @@ footer {
             font-family: 'Open Sans', sans-serif;
             font-size: $text-s;
             @media (max-width: 480px) {
-                @include flex-property(center,center);
+                @include flex-property(center,flex-start);
                 flex-direction: column;
                 font-size: $text-base;
                 .copyrigh {
-                    font-size: $text-base;
-                }
-                .footer-nav-ul {
-                    padding: 16px;
                     font-size: $text-base;
                 }
             }
@@ -275,6 +291,10 @@ footer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media (max-width: 480px) {
+                    padding: 16px 16px 16px 0;
+                    font-size: $text-base;
+                }
                 .footer-nav-li {
                     display: flex;
                     a {
@@ -283,11 +303,12 @@ footer {
                         color: $color-white;
                         &::after {
                             content: "";
-                            width: 6px;
-                            height: 6px;
+                            width: 4px;
+                            height: 4px;
                             border-radius: 100%;
                             background-color: $color-white;
                             margin-left: 6px;
+                            margin-right: 6px;
                             display: block;
                         }
                     }
@@ -298,10 +319,18 @@ footer {
                     }
                 }
             }
-            ul {
+            .social-icons {
                 @include display(flex);
+                @media (max-width: 480px) {
+                    @include flex-property(space-between,center);
+                    width: 100%;
+                    margin: 0 auto;
+                }
                 li {
-                    margin-left: 8px;
+                    margin-left: 16px;
+                    @media (max-width: 480px) {
+                            margin: 0 auto;
+                        }
                     a {
                         ion-icon {
                             font-size: 24px;

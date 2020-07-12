@@ -624,17 +624,35 @@ footer {
     width: 86%; }
     footer .footer-content .footer-ttl {
       font-size: 30px;
-      margin-bottom: 16px; }
+      margin-bottom: 24px;
+      max-width: 640px;
+      line-height: 38px; }
     footer .footer-content .about-mail-wrap {
       font-family: 'Open Sans', sans-serif; }
       footer .footer-content .about-mail-wrap p {
-        font-size: 14px;
+        font-size: 18px;
+        line-height: 22px;
         margin-bottom: 4px; }
         @media (max-width: 480px) {
           footer .footer-content .about-mail-wrap p {
             font-size: 16px; } }
         footer .footer-content .about-mail-wrap p a {
-          color: #ffffff; }
+          color: #ffffff;
+          font-weight: 600;
+          position: relative; }
+          footer .footer-content .about-mail-wrap p a::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ffffff;
+            opacity: 0;
+            transition: all 0.2s linear; }
+          footer .footer-content .about-mail-wrap p a:hover::after {
+            opacity: 1;
+            bottom: -1px; }
     footer .footer-content .copy-social {
       display: flex;
       justify-content: space-between;
@@ -647,18 +665,19 @@ footer {
       @media (max-width: 480px) {
         footer .footer-content .copy-social {
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           flex-direction: column;
           font-size: 16px; }
           footer .footer-content .copy-social .copyrigh {
-            font-size: 16px; }
-          footer .footer-content .copy-social .footer-nav-ul {
-            padding: 16px;
             font-size: 16px; } }
       footer .footer-content .copy-social .footer-nav-ul {
         display: flex;
         align-items: center;
         justify-content: center; }
+        @media (max-width: 480px) {
+          footer .footer-content .copy-social .footer-nav-ul {
+            padding: 16px 16px 16px 0;
+            font-size: 16px; } }
         footer .footer-content .copy-social .footer-nav-ul .footer-nav-li {
           display: flex; }
           footer .footer-content .copy-social .footer-nav-ul .footer-nav-li a {
@@ -668,19 +687,29 @@ footer {
             color: #ffffff; }
             footer .footer-content .copy-social .footer-nav-ul .footer-nav-li a::after {
               content: "";
-              width: 6px;
-              height: 6px;
+              width: 4px;
+              height: 4px;
               border-radius: 100%;
               background-color: #ffffff;
               margin-left: 6px;
+              margin-right: 6px;
               display: block; }
         footer .footer-content .copy-social .footer-nav-ul .footer-nav-li-3 a {
           color: #ffffff; }
-      footer .footer-content .copy-social ul {
+      footer .footer-content .copy-social .social-icons {
         display: flex; }
-        footer .footer-content .copy-social ul li {
-          margin-left: 8px; }
-          footer .footer-content .copy-social ul li a ion-icon {
+        @media (max-width: 480px) {
+          footer .footer-content .copy-social .social-icons {
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto; } }
+        footer .footer-content .copy-social .social-icons li {
+          margin-left: 16px; }
+          @media (max-width: 480px) {
+            footer .footer-content .copy-social .social-icons li {
+              margin: 0 auto; } }
+          footer .footer-content .copy-social .social-icons li a ion-icon {
             font-size: 24px;
             color: #ffffff; }
     footer .footer-content .git p {
@@ -986,12 +1015,9 @@ footer .footer-content .copy-social {
     .container .cta-tools .apps-tools {
       padding-top: 16px;
       padding-bottom: 16px; }
-      .container .cta-tools .apps-tools p {
-        font-size: 18px;
-        line-height: 26px;
-        margin-bottom: 8px; }
-      .container .cta-tools .apps-tools .more {
-        text-decoration: underline;
-        text-transform: uppercase;
-        font-weight: 600;
+      .container .cta-tools .apps-tools h2 {
         margin-bottom: 24px; }
+      .container .cta-tools .apps-tools .icons ion-icon {
+        font-size: 28px;
+        margin-right: 16px;
+        margin-bottom: 16px; }
