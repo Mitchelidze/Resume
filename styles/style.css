@@ -204,7 +204,7 @@ a {
   line-height: 20px;
   margin-bottom: 4px; }
 
-.container-main .featured .featured-text .featured-sub-ttl, .container-main .main-content p, .container .text-content {
+.container-main .main-content p, .container .text-content {
   font-size: 21px;
   color: #222222;
   line-height: 30px;
@@ -217,10 +217,9 @@ a {
   letter-spacing: 0.3px; }
 
 .navigation {
-  font-size: 18px;
-  color: #222222;
-  font-weight: 400;
-  letter-spacing: 0.5px; }
+  font-size: 14px;
+  color: #6e6d7a;
+  font-weight: 600; }
 
 .container-main .section-reviews .review .popover {
   max-width: 336px;
@@ -287,7 +286,7 @@ footer .footer-content .copy-social {
   line-height: 20px;
   margin-bottom: 4px; }
 
-.container-main .featured .featured-text .featured-sub-ttl, .container-main .main-content p, .container .text-content {
+.container-main .main-content p, .container .text-content {
   font-size: 21px;
   color: #222222;
   line-height: 30px;
@@ -300,10 +299,9 @@ footer .footer-content .copy-social {
   letter-spacing: 0.3px; }
 
 .navigation {
-  font-size: 18px;
-  color: #222222;
-  font-weight: 400;
-  letter-spacing: 0.5px; }
+  font-size: 14px;
+  color: #6e6d7a;
+  font-weight: 600; }
 
 .container-main .section-reviews .review .popover {
   max-width: 336px;
@@ -477,7 +475,9 @@ footer .footer-content .copy-social {
       .navigation .logo-nav .nav-ul .nav-li {
         margin-right: 32px; }
         .navigation .logo-nav .nav-ul .nav-li a {
-          color: #222222; }
+          color: #6e6d7a; }
+          .navigation .logo-nav .nav-ul .nav-li a:hover {
+            color: #222222; }
   @media (max-width: 480px) {
     .navigation .r-pdf {
       display: none; } }
@@ -512,7 +512,7 @@ footer .footer-content .copy-social {
         line-height: 28px; }
     .container-main .value-p .banner-img {
       width: 100%;
-      margin: 32px 0 32px 0; }
+      margin: 60px 0 32px 0; }
     .container-main .value-p .value-descr {
       font-size: 30px;
       color: #484848;
@@ -523,13 +523,19 @@ footer .footer-content .copy-social {
         font-weight: 700; }
       .container-main .value-p .value-descr .underline {
         text-decoration: underline; }
+        .container-main .value-p .value-descr .underline a {
+          color: #484848; }
   .container-main .featured .featured-text {
     text-align: center; }
     .container-main .featured .featured-text .featured-ttl {
       text-transform: uppercase;
       font-family: 'Open Sans', sans-serif; }
     .container-main .featured .featured-text .featured-sub-ttl {
-      font-family: 'Caladea', serif;
+      font-family: 'EB Garamond', serif;
+      font-size: 30px;
+      color: #484848;
+      line-height: 40px;
+      letter-spacing: 0.5px;
       margin-bottom: 32px; }
   .container-main .featured .feat-ul {
     display: flex;
@@ -541,7 +547,7 @@ footer .footer-content .copy-social {
       text-transform: uppercase;
       text-decoration: underline;
       font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.5px;
       margin-right: 16px;
       color: #222222; }
@@ -768,7 +774,7 @@ footer {
   line-height: 20px;
   margin-bottom: 4px; }
 
-.container-main .featured .featured-text .featured-sub-ttl, .container-main .main-content p, .container .text-content {
+.container-main .main-content p, .container .text-content {
   font-size: 21px;
   color: #222222;
   line-height: 30px;
@@ -781,10 +787,9 @@ footer {
   letter-spacing: 0.3px; }
 
 .navigation {
-  font-size: 18px;
-  color: #222222;
-  font-weight: 400;
-  letter-spacing: 0.5px; }
+  font-size: 14px;
+  color: #6e6d7a;
+  font-weight: 600; }
 
 .container-main .section-reviews .review .popover {
   max-width: 336px;
@@ -908,7 +913,7 @@ footer .footer-content .copy-social {
   line-height: 20px;
   margin-bottom: 4px; }
 
-.container-main .featured .featured-text .featured-sub-ttl, .container-main .main-content p, .container .text-content {
+.container-main .main-content p, .container .text-content {
   font-size: 21px;
   color: #222222;
   line-height: 30px;
@@ -921,10 +926,9 @@ footer .footer-content .copy-social {
   letter-spacing: 0.3px; }
 
 .navigation {
-  font-size: 18px;
-  color: #222222;
-  font-weight: 400;
-  letter-spacing: 0.5px; }
+  font-size: 14px;
+  color: #6e6d7a;
+  font-weight: 600; }
 
 .container-main .section-reviews .review .popover {
   max-width: 336px;
