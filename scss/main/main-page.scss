@@ -292,7 +292,7 @@ footer {
                 align-items: center;
                 justify-content: center;
                 @media (max-width: 480px) {
-                    padding: 16px 16px 16px 0;
+                    padding: 32px 16px 16px 0;
                     font-size: $text-base;
                 }
                 .footer-nav-li {
@@ -325,6 +325,8 @@ footer {
                     @include flex-property(space-between,center);
                     width: 100%;
                     margin: 0 auto;
+                    // border-top: 2px solid $border-gray;
+                    padding-top: 24px;
                 }
                 li {
                     margin-left: 16px;
@@ -347,6 +349,7 @@ footer {
                 font-size: $text-s;
                 @media (max-width: 480px) {
                     font-size: $text-base;
+                    line-height: 22px;
                 }
                 a {
                     @include t-decoration(underline);
