@@ -1,0 +1,97 @@
+// Example #1
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// Use: 
+@include flexCenter(column);
+
+
+// Example #2
+
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: darken($text-color,100%)
+    }
+}
+
+// Use: 
+.light {
+    @include theme($light-theme: true);
+}
+// if we change true to false, theme becames drak.(if it exist)
+.light {
+    @include theme($light-theme: false);
+}
+
+// Example #3
+
+// creating variable and then mixin:
+$mobile: 800px;
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+// Use:
+@include mobile {
+    flex-direction: column;
+    font-size: $text-xs;
+    // Or anything
+}
+
+
+
+
+// Variables:
+
+$font-sizes : (
+    "text-xs" : 12px,
+    "text-s" : 14px,
+    "text-base" : 16px,
+    "text-medium" : 18px
+);
+
+// use:
+// font-size: map-get($font-sizes, text-xs);
+
+@function fontsize($fontsize-name) {
+    @return map-get($font-sizes, $fontsize-name);
+}
+
+// use:
+// font-size: fontsize(text-s);
+
+
+// თუ მინდა ერთი მშობლის შვილებს ერთნაირი სტილი ქონდეთ, მაგრამ ერთ-ერთ შვილს 
+// დამატებით განსხვავებული სტილი ქონდეს:
+
+// მაგალითად გვაქვს 2 პარაგრაფი paragraph1 და paragraph2 main კლასის შიგნით
+// extend-ით შემოგვაქვს იმ კლასის სტილი, რომელიც გვინდა გამეორდეს.
+
+.main {
+    width: 80% - 40%; 
+    // SCSS სინტაქსით შეგძლია ასე ჩავწეროთ width
+    margin: 0 auto;
+    #{&}__paragraph1 {
+        font-size: fontsize($text-xs);
+
+        &:hover {
+            color: pink;
+        }
+    }
+    #{&}__paragraph2 {
+        @extend .main__paragraph1;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}

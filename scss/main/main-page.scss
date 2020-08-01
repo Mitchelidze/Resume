@@ -225,7 +225,7 @@
                  }
                  ul {
                      @include t-transform(uppercase);
-                     font-size: $text-xs;         
+                     font-size: map-get($font-sizes, text-xs);        
                      font-family: 'Open Sans', sans-serif;
                      margin-right: 16px;
                      color: #AAB7C4;
