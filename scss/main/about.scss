@@ -3,11 +3,11 @@
 @import '../modules/mixins.scss';
 
 
-
+@import '../main/nav.scss';
+@import '../main/footer.scss';
 
 
 .container-main {
-    padding-top: 120px;
     h1 {
         @extend %title1-2;
         @extend %position-article;

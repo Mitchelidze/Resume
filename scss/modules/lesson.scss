@@ -32,7 +32,7 @@
 // Example #3
 
 // creating variable and then mixin:
-$mobile: 800px;
+$mobile: 480px;
 
 @mixin mobile {
     @media (max-width: $mobile) {

@@ -2,13 +2,14 @@
 @import '../modules/classes.scss';
 @import '../modules/mixins.scss';
 
+@import '../main/nav.scss';
+@import '../main/footer.scss';
 
 .container {
     @extend %position;
     @include display(flex);
     @include flex-property(space-between,flex-start);
     flex-wrap: wrap;
-    padding-top: 120px;
     .text-content {
         max-width: 720px;
         padding: 16px;

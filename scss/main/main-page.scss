@@ -3,101 +3,23 @@
 @import '../modules/mixins.scss';
 @import '../basic/font.scss';
 
+@import '../main/nav.scss';
+@import '../main/footer.scss';
 
-
-
-.navigation {
-    @include display(flex);
-    @include flex-property(space-between,center);
-    @include t-transform(capitalize);
-    @extend %text-nav;
-    font-family: 'Open Sans', sans-serif;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    padding-right: 5%;
-    padding-left: 5%;
-    height: 66px;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: $color-white;
-    .logo-nav {
-        @include display(flex);
-        @include flex-property(flex-start,center);
-        .logo {
-            width: 40px;
-            height: 40px;
-            background-color: $main-color;
-            margin-right: 40px;
-        } 
-        .nav-ul {
-            @include display(flex);
-            .nav-li {
-                margin-right: 32px;
-                a {
-                    color: #6e6d7a;
-                    &:hover {
-                        color: $main-color;
-                    }
-                }
-            }
-        }
-    }
-    .r-pdf {
-        @media (max-width: 480px) {
-            display: none;
-        }
-        a {
-            color: $main-color;
-            @include position(relative);
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -4px;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                background-color: $sec-color;
-                opacity: 0;
-                transition: all 0.2s linear;
-            }
-            &:hover::after {
-                opacity: 1;
-                bottom: -1px;
-            }
-        }
-    }
-}
 .container-main {
     @extend %position;
-    padding-top: 120px;
-    .value-p {
-        @extend %col-center;
+    .value {
         font-family: 'EB Garamond', serif;
         margin-top: 90px;
-        .text-value {
-            text-align: center;
-           .value-ttl {
-               @extend %title1;
-           }
-           .value-sub-ttl {
-            font-size: $text-2xl;
-            color: $sec-color;
-            font-weight: 400;
-            line-height: 28px;
-           }
-        }
-        .banner-img {
-            width: 100%;
-            margin: 60px 0 32px 0; 
-        }
-        .value-descr {
+        max-width: 680px;
+        margin-top: 160px;
+        margin-bottom: 100px;
+        &-descr {
             font-size: $text-2xl;
             color: $sec-color;
             line-height: 40px;
-            letter-spacing: 0.5px;
-            margin-bottom: 160px; 
+            letter-spacing: 0.5px; 
+            padding-bottom: 64px;
           .bold {
               font-weight: 700;
           }
@@ -106,8 +28,15 @@
               a {
                   color: $sec-color;
               }
-          }
+            }
         }
+    }
+    .cool {
+        @extend .value-descr;
+    }
+    .grey {
+        @extend .value-descr;
+        color : #717171;
     }
     .featured {
         .featured-text {
@@ -128,8 +57,7 @@
             }
         }
         .feat-ul {
-            @include display(flex);
-            @include flex-property(center,center);
+            @include flex(center);
             flex-wrap: wrap;
             margin-bottom: 32px;
             .feat-li {
@@ -148,8 +76,7 @@
             }
         }
         .boxes {
-            @include display(flex);
-            @include flex-property(space-around,center);
+            @include flex(space-around);
             flex-wrap: wrap;
             margin-top: 42px;
             // .first {
@@ -189,8 +116,7 @@
         }
     }
     .section-reviews {
-        @include display(flex);
-        @include flex-property(space-around,center);
+        @include flex(space-around);
         flex-wrap: wrap;
         margin-bottom: 64px;
         .review {
@@ -214,8 +140,7 @@
                 }
             }
              .img-name-wrap {
-                 @include display(flex);
-                 @include flex-property(space-between,center);
+                 @include flex(space-between);
                  max-width: 300px;
                  .popover-img {
                             width: 40px;
@@ -236,146 +161,12 @@
              }
         } 
         .none {
-            @media (max-width: 480px) {
+            @include mobile {
                 display: none;
             }
         }
     }
 }
-footer {
-    background-color: $main-color;
-    color: $color-white;
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 48px;
-    .footer-content {
-        @extend %position;
-        width: 86%;
-        .footer-ttl {
-            font-size: $text-2xl;
-            margin-bottom: 24px;
-            max-width: 640px;
-            line-height: 38px;
-        }
-        .about-mail-wrap {
-            font-family: 'Open Sans', sans-serif;
-            p {
-                font-size: $text-medium;
-                line-height: 22px;
-                margin-bottom: 4px;
-                @media (max-width: 480px) {
-                    font-size: $text-base;
-                }
-                a {
-                    color: $color-white;
-                    font-weight: 600;
-                    @include position(relative);
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -4px;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                background-color: $color-white;
-                opacity: 0;
-                transition: all 0.2s linear;
-            }
-            &:hover::after {
-                opacity: 1;
-                bottom: -1px;
-            }
-                }
-            }
-        }
-        .copy-social {
-            @include display(flex);
-            @include flex-property(space-between,center);
-            @extend %tb-border-gray;
-            flex-wrap: wrap;
-            margin: 32px 0 32px 0;
-            padding: 16px 0 16px 0;
-            font-family: 'Open Sans', sans-serif;
-            font-size: $text-s;
-            @media (max-width: 480px) {
-                @include flex-property(center,flex-start);
-                flex-direction: column;
-                font-size: $text-base;
-                .copyrigh {
-                    font-size: $text-base;
-                }
-            }
-            .footer-nav-ul {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                @media (max-width: 480px) {
-                    padding: 32px 16px 16px 0;
-                    font-size: $text-base;
-                }
-                .footer-nav-li {
-                    display: flex;
-                    a {
-                        @include display(flex);
-                        @include flex-property(center,center);
-                        color: $color-white;
-                        &::after {
-                            content: "";
-                            width: 4px;
-                            height: 4px;
-                            border-radius: 100%;
-                            background-color: $color-white;
-                            margin-left: 6px;
-                            margin-right: 6px;
-                            display: block;
-                        }
-                    }
-                }
-                .footer-nav-li-3 {
-                    a {
-                        color: $color-white;
-                    }
-                }
-            }
-            .social-icons {
-                @include display(flex);
-                @media (max-width: 480px) {
-                    @include flex-property(space-between,center);
-                    width: 100%;
-                    margin: 0 auto;
-                    // border-top: 2px solid $border-gray;
-                    padding-top: 24px;
-                }
-                li {
-                    margin-left: 16px;
-                    @media (max-width: 480px) {
-                            margin: 0 auto;
-                        }
-                    a {
-                        ion-icon {
-                            font-size: 24px;
-                            color: $color-white;
-                          }
-                    }
-                } 
-            }
-        }
-        .git {
-            p {
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 300;
-                font-size: $text-s;
-                @media (max-width: 480px) {
-                    font-size: $text-base;
-                    line-height: 22px;
-                }
-                a {
-                    @include t-decoration(underline);
-                    color: $color-white;
-                }
-            }
-        }
-    }
-}
+
 
 

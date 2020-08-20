@@ -1,0 +1,49 @@
+.nav {
+    @include flexLeft(row);
+    @include t-transform(capitalize);
+    @extend %text-nav;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 66px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color-white;
+    .wrapper {
+        @include display(flex);
+        @include flex-property(flex-start,center);
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-color: $main-color;
+            margin-right: 40px;
+        } 
+        .nav-ul {
+            @include display(flex);
+            .nav-li {
+                margin-right: 32px;
+                a {
+                    color: #6e6d7a;
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    .social {
+        display: flex;
+        &-icons {
+            &__link {
+                color: $main-color;
+                font-size: $text-lg;
+                padding: 16px;
+            }
+        }
+    }
+    
+}
