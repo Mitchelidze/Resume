@@ -30,8 +30,7 @@
 
 %title2 {
     font-size: $text-2xl;
-    text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -40,6 +39,14 @@
     font-size: $text-lg;
     font-weight: 600;
     margin-bottom: 8px;
+}
+
+%title5 {
+    font-size: $text-base;
+    margin-bottom: 16px;
+    letter-spacing: 2%;
+    color: $main-color;
+    text-transform: uppercase;
 }
 
 
@@ -53,8 +60,8 @@
 
 %text-body-lg {
     font-size: $text-body-lg;
-    color: $main-color;
-    line-height: 30px;
+    color: $sec-color;
+    line-height: 28px;
     letter-spacing: 0.3px;
 }
 
