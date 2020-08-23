@@ -22,42 +22,41 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="wrapper">
-            <div class="logo"></div>
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="work.html">Work</a></li>
-                <li class="nav-li"><a href="about.html">About</a></li>
-                <li class="nav-li"><a
-                        href="https://drive.google.com/file/d/1jOZiraYVCKTJ2FkzoDnhvxDGVSg57tZp/view?usp=sharing"
-                        target="blank">Resume?</a></li>
-            </ul>
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
         </div>
-        <ul class="social">
-            <li class="social-icons"><a class="social-icons__link" href="https://www.linkedin.com" target="blank">
+        <div class="logo"></div>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="work.html" class="menu-nav__link">Work</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="about.html" class="menu-nav__link">About</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="https://drive.google.com/file/d/1jOZiraYVCKTJ2FkzoDnhvxDGVSg57tZp/view?usp=sharing" class="menu-nav__link">Resume</a>
+                </li>
+            </ul>
+            <ul class="menu-soc">
+                <li class="menu-soc__icons"><a class="menu-soc__link" href="https://www.linkedin.com" target="blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a></li>
-            <li class="social-icons"><a class="social-icons__link" href="https://github.com/mitchelidze" target="blank">
+            <li class="menu-soc__icons"><a class="menu-soc__link" href="https://github.com/mitchelidze" target="blank">
                     <ion-icon name="logo-github"></ion-icon>
                 </a></li>
-            <li class="social-icons"><a class="social-icons__link" href="https://dribbble.com/mitchelidze"
+            <li class="menu-soc__icons"><a class="menu-soc__link" href="https://dribbble.com/mitchelidze"
                     target="blank">
                     <ion-icon name="logo-dribbble"></ion-icon>
                 </a></li>
-            <li class="social-icons"><a class="social-icons__link" href="https://medium.com/@mitchelidze"
+            <li class="menu-soc__icons"><a class="menu-soc__link" href="https://medium.com/@mitchelidze"
                     target="blank">
                     <ion-icon name="logo-medium"></ion-icon>
                 </a></li>
-            <!-- <li class="social-icons"><a class="social-icons__link" href="https://twitter.com/mitchelidze"
-                    target="blank">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-            <li class="social-icons"><a class="social-icons__link" href="https://www.facebook.com/mitchelidze"
-                    target="blank">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a></li> -->
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+    </header>
     <div class="container-main">
         <div class="value">
             <p class="value-descr"><span class="bold">Hi! I’m Miranda, a Junior User Interface Developer</span> or <span
@@ -181,6 +180,7 @@
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
