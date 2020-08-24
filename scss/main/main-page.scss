@@ -8,6 +8,16 @@
 @import '../main/footer.scss';
 @import './slider.scss';
 
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: $color-white;
+}
+
 .container-main {
     @extend %position;
     .value {
@@ -18,10 +28,14 @@
         margin-bottom: 60px;
         &-descr {
             font-size: $text-2xl;
-            color: $sec-color;
+            color: $main-color;
             line-height: 40px;
             letter-spacing: 0.5px; 
             padding-bottom: 64px;
+            a {
+                color: $main-color;
+                text-decoration: underline;
+            }
           .bold {
               font-weight: 700;
           }
@@ -43,7 +57,7 @@
 }
 
 .parallax {
-    background-image: url(../../images/workspace.jpg);
+    background-image: url(../../images/compressed.jpg);
     width: 100%;
     min-height: 300px;
     background-attachment: fixed;

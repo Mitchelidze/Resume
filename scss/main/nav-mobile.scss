@@ -78,14 +78,16 @@
       .menu-nav {
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         // სიმაღლე არ უნდა იყოს 100vh და გამოჩნდება აიკონები.
-        height: 100vh;
+        height: 82vh;
         overflow: hidden;
         background: #fff;
         list-style-type: none;
         padding-right: 1rem;
+        padding-left: 24px;
+        margin-top: 60px;
         // თუ გვინდა ზემოდან ჩამოვიდეს მენიუ, ვერტიკალურად, მაშინ Y ღერძს ვუთითებთ:
         // transform: translateY(-100%);
   
@@ -112,9 +114,9 @@
     
         &__link {
           display: inline-block;
-          font-size: 2rem;
+          font-size: 24px;
           text-transform: uppercase;
-          padding: 2rem 0;
+          padding: 16px 0;
           font-weight: 400;
           @include transition-ease;
     
@@ -123,6 +125,19 @@
           }
         }
       }
+
+
+    .menu-soc {
+      @include flex(space-around);
+      background: $color-white;
+      border-top: 1px solid #cccccc;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      &__link{
+        font-size: 24px;
+        color: $main-color;
+      }
+    }
     }
     
   
@@ -138,4 +153,4 @@
     // თუ გვინდა ბოლო შვილი არ ჩაითვალოს :
     // @for $i from 1 to 4 
   
-  }
+}

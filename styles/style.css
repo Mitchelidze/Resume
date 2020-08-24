@@ -514,13 +514,13 @@ footer .footer-content .copy-social {
     .nav .menu-nav {
       display: flex;
       flex-flow: column wrap;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      height: 82vh;
       overflow: hidden;
       background: #fff;
       list-style-type: none;
       padding-right: 1rem;
+      padding-left: 24px;
+      margin-top: 60px;
       transform: translateX(100%);
       transition: all 0.5s ease-in-out; }
       .nav .menu-nav.open {
@@ -534,13 +534,24 @@ footer .footer-content .copy-social {
           color: #fdfdfd; }
       .nav .menu-nav__link {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 24px;
         text-transform: uppercase;
-        padding: 2rem 0;
+        padding: 16px 0;
         font-weight: 400;
         transition: all 0.5s ease-in-out; }
         .nav .menu-nav__link:hover {
           color: #fdfdfd; }
+    .nav .menu-soc {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: #ffffff;
+      border-top: 1px solid #cccccc;
+      padding-top: 32px;
+      padding-bottom: 32px; }
+      .nav .menu-soc__link {
+        font-size: 24px;
+        color: #222222; }
   .menu-nav__item:nth-child(1) {
     transition-delay: 0.25s; }
   .menu-nav__item:nth-child(2) {
@@ -662,6 +673,14 @@ footer {
         text-decoration: underline;
         color: #ffffff; }
 
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff; }
+
 .container-main .value {
   font-family: 'EB Garamond', serif;
   margin-top: 90px;
@@ -670,10 +689,13 @@ footer {
   margin-bottom: 60px; }
   .container-main .value-descr, .container-main .cool, .container-main .grey {
     font-size: 30px;
-    color: #484848;
+    color: #222222;
     line-height: 40px;
     letter-spacing: 0.5px;
     padding-bottom: 64px; }
+    .container-main .value-descr a, .container-main .cool a, .container-main .grey a {
+      color: #222222;
+      text-decoration: underline; }
     .container-main .value-descr .bold, .container-main .cool .bold, .container-main .grey .bold {
       font-weight: 700; }
     .container-main .value-descr .underline, .container-main .cool .underline, .container-main .grey .underline {
@@ -685,7 +707,7 @@ footer {
   color: #717171; }
 
 .parallax {
-  background-image: url(../../images/workspace.jpg);
+  background-image: url(../../images/compressed.jpg);
   width: 100%;
   min-height: 300px;
   background-attachment: fixed;
