@@ -80,6 +80,7 @@
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
+        // სიმაღლე არ უნდა იყოს 100vh და გამოჩნდება აიკონები.
         height: 100vh;
         overflow: hidden;
         background: #fff;

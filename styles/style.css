@@ -451,7 +451,9 @@ footer .footer-content .copy-social {
         header nav .menu-soc__icons .menu-soc__link {
           color: #6e6d7a;
           font-size: 24px;
-          padding: 16px; } }
+          padding: 16px; }
+          header nav .menu-soc__icons .menu-soc__link:hover {
+            color: #222222; } }
 
 .menu-nav__link {
   color: #6e6d7a;
@@ -876,7 +878,9 @@ footer .footer-content .copy-social {
         header nav .menu-soc__icons .menu-soc__link {
           color: #6e6d7a;
           font-size: 24px;
-          padding: 16px; } }
+          padding: 16px; }
+          header nav .menu-soc__icons .menu-soc__link:hover {
+            color: #222222; } }
 
 footer {
   background-color: #222222;
@@ -1172,7 +1176,9 @@ footer .footer-content .copy-social {
         header nav .menu-soc__icons .menu-soc__link {
           color: #6e6d7a;
           font-size: 24px;
-          padding: 16px; } }
+          padding: 16px; }
+          header nav .menu-soc__icons .menu-soc__link:hover {
+            color: #222222; } }
 
 footer {
   background-color: #222222;

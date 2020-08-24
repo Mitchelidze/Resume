@@ -42,6 +42,10 @@
                         color: #6e6d7a;
                         font-size: $text-lg;
                         padding: 16px;
+
+                        &:hover {
+                            color: $main-color;
+                        }
                     }
                 }
             }
