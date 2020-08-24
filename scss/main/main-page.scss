@@ -42,6 +42,17 @@
     }
 }
 
+.parallax {
+    background-image: url(../../images/workspace.jpg);
+    width: 100%;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .work {
     background-color: #F3F3F3;
     width: 100%;

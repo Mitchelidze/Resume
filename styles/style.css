@@ -371,6 +371,88 @@ footer .footer-content .copy-social {
   src: local("Caladea Bold"), local("Caladea-Bold"), url("../../fonts/caladea/caladea-v1-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/caladea/caladea-v1-latin-700.woff2") format("woff2"), url("../../fonts/caladea/caladea-v1-latin-700.woff") format("woff"), url("../../fonts/caladea/caladea-v1-latin-700.ttf") format("truetype"), url("../../fonts/caladea/caladea-v1-latin-700.svg#Caladea") format("svg");
   /* Legacy iOS */ }
 
+footer .footer-content, .container-main, .container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto; }
+
+.container-main h1, .container-main .main-content {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto; }
+
+.container-main h1 {
+  color: #222222;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 32px; }
+
+.work .featured h2, .work2 .featured h2, .work3 .featured h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px; }
+
+.container .text-content .bold, .container .cta-tools .apps-tools h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px; }
+
+.work .featured h5, .work2 .featured h5, .work3 .featured h5 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 2%;
+  color: #222222;
+  text-transform: uppercase; }
+
+.work .featured__descr, .work2 .featured__descr, .work3 .featured__descr, .container-main .main-content p, .container .text-content {
+  font-size: 21px;
+  color: #484848;
+  line-height: 28px;
+  letter-spacing: 0.3px; }
+
+footer .footer-content .copy-social {
+  border-top: 1px solid #3a3737;
+  border-bottom: 1px solid #3a3737; }
+
+@media (min-width: 481px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    max-width: 1440px;
+    height: 66px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 5% 0 5%;
+    background-color: #ffffff; }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      text-transform: capitalize;
+      flex-wrap: wrap;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #6e6d7a;
+      font-weight: 600; }
+      header nav .menu-nav {
+        display: flex; }
+        header nav .menu-nav__item {
+          margin-right: 32px; }
+        header nav .menu-nav__link {
+          color: #6e6d7a; }
+          header nav .menu-nav__link:hover {
+            color: #222222; }
+      header nav .menu-soc {
+        display: flex; }
+        header nav .menu-soc__icons .menu-soc__link {
+          color: #6e6d7a;
+          font-size: 24px;
+          padding: 16px; } }
+
 .menu-nav__link {
   color: #6e6d7a;
   font-family: 'Open Sans', sans-serif;
@@ -453,7 +535,7 @@ footer .footer-content .copy-social {
         font-size: 2rem;
         text-transform: uppercase;
         padding: 2rem 0;
-        font-weight: 300;
+        font-weight: 400;
         transition: all 0.5s ease-in-out; }
         .nav .menu-nav__link:hover {
           color: #fdfdfd; }
@@ -600,6 +682,15 @@ footer {
 .container-main .grey {
   color: #717171; }
 
+.parallax {
+  background-image: url(../../images/workspace.jpg);
+  width: 100%;
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .work, .work2, .work3 {
   background-color: #F3F3F3;
   width: 100%;
@@ -704,6 +795,88 @@ footer .footer-content, .container-main, .container {
 footer .footer-content .copy-social {
   border-top: 1px solid #3a3737;
   border-bottom: 1px solid #3a3737; }
+
+footer .footer-content, .container-main, .container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto; }
+
+.container-main h1, .container-main .main-content {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto; }
+
+.container-main h1 {
+  color: #222222;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 32px; }
+
+.work .featured h2, .work2 .featured h2, .work3 .featured h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px; }
+
+.container .text-content .bold, .container .cta-tools .apps-tools h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px; }
+
+.work .featured h5, .work2 .featured h5, .work3 .featured h5 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 2%;
+  color: #222222;
+  text-transform: uppercase; }
+
+.work .featured__descr, .work2 .featured__descr, .work3 .featured__descr, .container-main .main-content p, .container .text-content {
+  font-size: 21px;
+  color: #484848;
+  line-height: 28px;
+  letter-spacing: 0.3px; }
+
+footer .footer-content .copy-social {
+  border-top: 1px solid #3a3737;
+  border-bottom: 1px solid #3a3737; }
+
+@media (min-width: 481px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    max-width: 1440px;
+    height: 66px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 5% 0 5%;
+    background-color: #ffffff; }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      text-transform: capitalize;
+      flex-wrap: wrap;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #6e6d7a;
+      font-weight: 600; }
+      header nav .menu-nav {
+        display: flex; }
+        header nav .menu-nav__item {
+          margin-right: 32px; }
+        header nav .menu-nav__link {
+          color: #6e6d7a; }
+          header nav .menu-nav__link:hover {
+            color: #222222; }
+      header nav .menu-soc {
+        display: flex; }
+        header nav .menu-soc__icons .menu-soc__link {
+          color: #6e6d7a;
+          font-size: 24px;
+          padding: 16px; } }
 
 footer {
   background-color: #222222;
@@ -918,6 +1091,88 @@ footer .footer-content, .container-main, .container {
 footer .footer-content .copy-social {
   border-top: 1px solid #3a3737;
   border-bottom: 1px solid #3a3737; }
+
+footer .footer-content, .container-main, .container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto; }
+
+.container-main h1, .container-main .main-content {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto; }
+
+.container-main h1 {
+  color: #222222;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 32px; }
+
+.work .featured h2, .work2 .featured h2, .work3 .featured h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px; }
+
+.container .text-content .bold, .container .cta-tools .apps-tools h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px; }
+
+.work .featured h5, .work2 .featured h5, .work3 .featured h5 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 2%;
+  color: #222222;
+  text-transform: uppercase; }
+
+.work .featured__descr, .work2 .featured__descr, .work3 .featured__descr, .container-main .main-content p, .container .text-content {
+  font-size: 21px;
+  color: #484848;
+  line-height: 28px;
+  letter-spacing: 0.3px; }
+
+footer .footer-content .copy-social {
+  border-top: 1px solid #3a3737;
+  border-bottom: 1px solid #3a3737; }
+
+@media (min-width: 481px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    max-width: 1440px;
+    height: 66px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 5% 0 5%;
+    background-color: #ffffff; }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      text-transform: capitalize;
+      flex-wrap: wrap;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #6e6d7a;
+      font-weight: 600; }
+      header nav .menu-nav {
+        display: flex; }
+        header nav .menu-nav__item {
+          margin-right: 32px; }
+        header nav .menu-nav__link {
+          color: #6e6d7a; }
+          header nav .menu-nav__link:hover {
+            color: #222222; }
+      header nav .menu-soc {
+        display: flex; }
+        header nav .menu-soc__icons .menu-soc__link {
+          color: #6e6d7a;
+          font-size: 24px;
+          padding: 16px; } }
 
 footer {
   background-color: #222222;
