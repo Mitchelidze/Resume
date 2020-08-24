@@ -1,3 +1,12 @@
+@import '../modules/mixins.scss';
+@import '../modules/variable.scss';
+
+.menu-nav__link {
+  color: #6e6d7a;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
 @include mobile {
     .menu-btn {
       position: absolute;
@@ -15,7 +24,7 @@
         top: 0.5rem;
         width: 28px;
         height: 3px;
-        background: set-text-color($primary-color);
+        background: #222222;
         @include transition-ease;
     
         &::before {
@@ -24,7 +33,7 @@
           top: -8px;
           width: 28px;
           height: 3px;
-          background: set-text-color($primary-color);
+          background: #222222;
           @include transition-ease;
         }
     
@@ -34,7 +43,7 @@
           top: 8px;
           width: 20px;
           height: 3px;
-          background: set-text-color($primary-color);
+          background: #222222;
           @include transition-ease;
         }
     
@@ -73,7 +82,7 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
-        background: $primary-color;
+        background: #fff;
         list-style-type: none;
         padding-right: 1rem;
         // თუ გვინდა ზემოდან ჩამოვიდეს მენიუ, ვერტიკალურად, მაშინ Y ღერძს ვუთითებთ:

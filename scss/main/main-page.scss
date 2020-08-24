@@ -98,24 +98,6 @@
 .work2 {
     @extend .work;
     background-color: #ffffff;
-    .images-wrapper {
-        .image-behind {
-            position: relative;
-            max-width: 560px;
-            max-height: 560px;
-            object-fit: cover;
-            z-index: 1;
-        }
-        .image-above {
-            position: absolute;
-            max-width: 260px;
-            max-height: 380px;
-            object-fit: cover;
-            z-index: 2;
-            top: 1400px;
-            left: 460px;
-        }
-    }
     .featured {
         h4 {
             font-size: $text-base;

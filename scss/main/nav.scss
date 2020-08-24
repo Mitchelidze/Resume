@@ -1,47 +1,54 @@
-@media (min-width: 560px) {
-    header {
-        position: fixed;
-        nav {
-            @include flexLeft(row);
-            @include t-transform(capitalize);
-            @extend %text-nav;
-            font-family: 'Open Sans', sans-serif;
-            top: 0;
-            z-index: 10;
-            padding-right: 5%;
-            padding-left: 5%;
-            height: 66px;
-            max-width: 1440px;
-            width: 100%;
-            margin: 0 auto;
-            background-color: $color-white;
-            .menu-nav {
-                @include display(flex);
-                &__item {
-                    margin-right: 32px;
-                }
-                &__link {
-                    color: #6e6d7a;
+// @import '../modules/classes.scss';
+// @import '../modules/mixins.scss';
+// @import '../modules/variable.scss';
+
+
+// @media (min-width: 560px) {
+//     header {
+//         position: fixed;
+//         nav {
+//             @include flexLeft(row);
+//             @include t-transform(capitalize);
+//             font-size: $text-s;
+//             color: #6e6d7a;
+//             font-weight: 600;
+//             font-family: 'Open Sans', sans-serif;
+//             top: 0;
+//             z-index: 10;
+//             padding-right: 5%;
+//             padding-left: 5%;
+//             height: 66px;
+//             max-width: 1440px;
+//             width: 100%;
+//             margin: 0 auto;
+//             background-color: $color-white;
+//             .menu-nav {
+//                 @include display(flex);
+//                 &__item {
+//                     margin-right: 32px;
+//                 }
+//                 &__link {
+//                     color: #6e6d7a;
     
-                    &:hover {
-                        color: $main-color;
-                    }
-                }
-            }
-            .menu-soc {
-                display: flex;
-                &__icons {
-                    .menu-soc__link {
-                        @extend .menu-nav__link;
-                        font-size: $text-lg;
-                        padding: 16px;
-                    }
-                }
-            }
-        }
-    }
+//                     &:hover {
+//                         color: $main-color;
+//                     }
+//                 }
+//             }
+//             .menu-soc {
+//                 display: flex;
+//                 &__icons {
+//                     .menu-soc__link {
+//                         @extend .menu-nav__link;
+//                         font-size: $text-lg;
+//                         padding: 16px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
     
     
     
     
-}
+// }
