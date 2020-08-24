@@ -19,7 +19,7 @@ function toggleMenu() {
     navItems.forEach(item => item.classList.add('open'));
 
     menuSocs.forEach(soc => soc.classList.add('open'));
-    menuIcons.forEach(soc => icon.classList.add('open'));
+    menuIcons.forEach(icon => icon.classList.add('open'));
 
     showMenu = true;
   } else {
@@ -29,7 +29,7 @@ function toggleMenu() {
     navItems.forEach(item => item.classList.remove('open'));
 
     menuSocs.forEach(soc => soc.classList.remove('open'));
-    menuIcons.forEach(soc => icon.classList.remove('open'));
+    menuIcons.forEach(icon => icon.classList.remove('open'));
 
     showMenu = false;
   }
