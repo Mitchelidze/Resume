@@ -4,8 +4,8 @@ const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav__item');
 
-const menuSocs = document.querySelectorAll('.menu-soc');
-const menuIcons = document.querySelectorAll('.menu-soc__icons');
+// const menuSocs = document.querySelectorAll('.menu-soc');
+// const menuIcons = document.querySelectorAll('.menu-soc__icons');
 
 let showMenu = false;
 
@@ -18,8 +18,8 @@ function toggleMenu() {
     menuNav.classList.add('open');
     navItems.forEach(item => item.classList.add('open'));
 
-    menuSocs.forEach(soc => soc.classList.add('open'));
-    menuIcons.forEach(icon => icon.classList.add('open'));
+    // menuSocs.forEach(soc => soc.classList.add('open'));
+    // menuIcons.forEach(icon => icon.classList.add('open'));
 
     showMenu = true;
   } else {
@@ -28,8 +28,8 @@ function toggleMenu() {
     menuNav.classList.remove('open');
     navItems.forEach(item => item.classList.remove('open'));
 
-    menuSocs.forEach(soc => soc.classList.remove('open'));
-    menuIcons.forEach(icon => icon.classList.remove('open'));
+    // menuSocs.forEach(soc => soc.classList.remove('open'));
+    // menuIcons.forEach(icon => icon.classList.remove('open'));
 
     showMenu = false;
   }
