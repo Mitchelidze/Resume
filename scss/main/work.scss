@@ -10,9 +10,9 @@
     @include display(flex);
     @include flex-property(space-between,flex-start);
     flex-wrap: wrap;
+    margin-top: 120px;
     .text-content {
         max-width: 720px;
-        padding: 16px;
         @extend %text-body-lg;
         font-family: 'EB Garamond', serif;
         .bold {
@@ -26,7 +26,6 @@
         width: 100%;
         padding: 16px 16px 16px 24px;
         font-family: 'Open Sans', sans-serif;
-        border-left: 2px solid #dedede;
         @media (max-width: 480px) {
             .cta-tools {
                 display: none;
@@ -65,7 +64,7 @@
                         @include display(flex);
                         @include flex-property(center,center);
                         @include t-transform(Capitalize);
-                        background-color: #404AE2;
+                        background-color: #103477;
                         border-radius: 8px;
                         letter-spacing: 0.4px;
                         text-align: center;

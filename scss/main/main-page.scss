@@ -14,7 +14,7 @@ header {
     top: 0;
     z-index: 10;
     width: 100%;
-    height: 60px;
+    margin: 0 auto;
     background-color: $color-white;
 }
 
@@ -70,51 +70,59 @@ header {
 .work {
     background-color: #F3F3F3;
     width: 100%;
-    padding: 5%;
-    @include flex(space-between);
-    flex-wrap: wrap;
-    .featured {
-        max-width: 450px;
-        font-family: 'Open Sans', sans-serif;
-        h5 {
-            @extend %title5;
-        }
-        h2 {
-            @extend %title2;
-            margin-bottom: 16px;
-        }
-        &__descr {
-            @extend %text-body-lg;
-            margin-bottom: 24px;
-        }
-        &__link {
-            @include flex(flex-start);
-            margin-bottom: 8px;
-            a {
-                @include flex(center);
-                text-decoration: underline;
-                font-weight: 600;
-                font-size: $text-base;
-                line-height: 24px;
-                color: $main-color;
-                &::before {
-                    content: "";
-                    width: 4px;
-                    height: 4px;
-                    border-radius: 100%;
-                    background-color: $main-color;
-                    margin-right: 6px;
-                    display: block;
+    .container_work {
+        @include flex(space-between);
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5% 0 5% 0;
+        .featured {
+            max-width: 450px;
+            font-family: 'Open Sans', sans-serif;
+            @include mobile {
+                margin: 16px;
+            }
+            h5 {
+                @extend %title5;
+            }
+            h2 {
+                @extend %title2;
+                margin-bottom: 16px;
+            }
+            &__descr {
+                @extend %text-body-lg;
+                margin-bottom: 24px;
+            }
+            &__link {
+                @include flex(flex-start);
+                margin-bottom: 8px;
+                a {
+                    @include flex(center);
+                    text-decoration: underline;
+                    font-weight: 600;
+                    font-size: $text-base;
+                    line-height: 24px;
+                    color: $main-color;
+                    &::before {
+                        content: "";
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 100%;
+                        background-color: $main-color;
+                        margin-right: 6px;
+                        display: block;
+                    }
                 }
             }
+    
         }
-
-    }
-    .images {
-        .featured_image {
-            max-width: 370px;
-            @include mobile {
-                width: 100%;
+        .images {
+            .featured_image {
+                max-width: 370px;
+                @include mobile {
+                    width: 100%;
+                }
             }
         }
     }

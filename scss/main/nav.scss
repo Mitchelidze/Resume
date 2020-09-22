@@ -8,20 +8,18 @@
         position: fixed;
         top: 0;
         z-index: 10;
-        max-width: 1440px;
-        height: 66px;
-        width: 100%;
         margin: 0 auto;
-        padding: 2% 5% 0 5%;
         background-color: $color-white;
         nav {
             @include flexLeft(row);
             @include t-transform(capitalize);
+            max-width: 1200px;
             flex-wrap: wrap;
             font-family: 'Open Sans', sans-serif;
             font-size: $text-s;
             color: #6e6d7a;
             font-weight: 600;
+            margin: 24px auto;
             .menu-nav {
                 @include display(flex);
                 &__item {
