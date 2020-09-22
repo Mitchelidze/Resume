@@ -9,11 +9,13 @@
         top: 0;
         z-index: 10;
         margin: 0 auto;
+        width: 100%;
         background-color: $color-white;
         nav {
             @include flexLeft(row);
             @include t-transform(capitalize);
             max-width: 1200px;
+            width: 90%;
             flex-wrap: wrap;
             font-family: 'Open Sans', sans-serif;
             font-size: $text-s;
@@ -27,6 +29,7 @@
                 }
                 &__link {
                     color: #6e6d7a;
+                    font-size: 18px;
     
                     &:hover {
                         color: $main-color;

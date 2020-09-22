@@ -13,7 +13,6 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 100%;
     margin: 0 auto;
     background-color: $color-white;
 }
@@ -57,9 +56,9 @@ header {
 }
 
 .parallax {
-    background-image: url(../images/compressed.jpg);
+    background-image: url(../images/gradient2.jpg);
     width: 100%;
-    min-height: 300px;
+    min-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +73,7 @@ header {
         @include flex(space-between);
         flex-wrap: wrap;
         max-width: 1200px;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         padding: 5% 0 5% 0;
         .featured {

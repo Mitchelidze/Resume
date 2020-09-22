@@ -1,3 +1,9 @@
+@import '../modules/variable.scss';
+@import '../modules/classes.scss';
+@import '../modules/mixins.scss';
+@import '../basic/font.scss';
+
+
 footer {
     background-color: $main-color;
     color: $color-white;
