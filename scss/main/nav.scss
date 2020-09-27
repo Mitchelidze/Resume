@@ -19,7 +19,7 @@
             flex-wrap: wrap;
             font-family: 'Open Sans', sans-serif;
             font-size: $text-s;
-            color: #6e6d7a;
+            color: #222222;
             font-weight: 600;
             margin: 24px auto;
             .menu-nav {
@@ -28,11 +28,13 @@
                     margin-right: 32px;
                 }
                 &__link {
-                    color: #6e6d7a;
+                    color: #222222;
                     font-size: 18px;
     
                     &:hover {
-                        color: $main-color;
+                        background: -webkit-linear-gradient(90deg, rgba(255,0,138,1) 0%, rgba(152,0,255,1) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
             }
@@ -40,13 +42,9 @@
                 display: flex;
                 &__icons {
                     .menu-soc__link {
-                        color: #6e6d7a;
+                        color: #222222;
                         font-size: $text-lg;
                         padding: 16px;
-
-                        &:hover {
-                            color: $main-color;
-                        }
                     }
                 }
             }

@@ -1,0 +1,112 @@
+@import '../modules/variable.scss';
+@import '../modules/classes.scss';
+@import '../modules/mixins.scss';
+@import '../basic/font.scss';
+
+@import '../main/nav.scss';
+@import '../main/nav-mobile.scss';
+@import '../main/footer.scss';
+@import './slider.scss';
+
+
+article {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 120px;
+    .item_container {
+        position: relative;
+        max-width: 100%;
+        display: flex;
+
+        &::before {
+            background-image: url(../images/dots2.svg);
+            max-width: 478px;
+            height: 592px;
+            position: absolute;
+            width: 100%;
+            content: '';
+            z-index: -2;
+            top: -6vh;
+            right: 0;
+            bottom: -4vh;
+            // background-size: 28px 28px;
+        }
+        .item_image {
+            position: relative;
+            z-index: 1;
+            top: 0;
+            right: 40px;
+            max-width: 350px;
+            height: 100%;
+            order: 2;
+            flex: 0 0 350px;
+            margin: 0;
+        }
+        .item_content {
+
+            &::after {
+                content: '';
+                position:  absolute;
+                top: -7vh;
+                right: 70px;
+                bottom: 4vh;
+                max-width: 428px;
+                z-index: -3;
+                width: 100%;
+                background-color: #BDD1DB;
+            }
+            .global_meta {
+                display: flex;
+                margin-bottom: 2vh;
+                time {
+                    font-family: 'Karla', sans-serif;
+                    margin-right: 8px;
+                    font-size: 14px;
+                    color: #222222;
+                    @include flex(center);
+
+                    &::after {
+                        content: "";
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 100%;
+                        background-color: #222222;
+                        margin-left: 6px;
+                        margin-right: 6px;
+                        display: block;
+                    }
+                }
+                .autor {
+                    @extend time;
+                }
+                .global_reading {
+                    @extend time;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            .item_title {
+                max-width: 1000px;
+                font-size: 60px;
+                line-height: 76px;
+                margin-bottom: 16px;
+            }
+            .item_descr {
+                max-width: 600px;
+                margin-bottom: 24px;
+            }
+            .tags {
+                a {
+                    color: #222222;
+                    margin-right: 8px;
+                    font-family: 'Karla', sans-serif;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+}
