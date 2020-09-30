@@ -4,13 +4,6 @@
 
 
 @media (min-width: 481px) {
-    header {
-        position: fixed;
-        top: 0;
-        z-index: 10;
-        margin: 0 auto;
-        width: 100%;
-        background-color: $color-white;
         nav {
             @include flexLeft(row);
             @include t-transform(capitalize);
@@ -32,7 +25,7 @@
                     font-size: 18px;
     
                     &:hover {
-                        background: -webkit-linear-gradient(90deg, rgba(255,0,138,1) 0%, rgba(152,0,255,1) 100%);
+                        background: -webkit-linear-gradient(90deg, rgba(255,0,138,1) 0%, rgb(152, 0, 255) 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
@@ -45,9 +38,12 @@
                         color: #222222;
                         font-size: $text-lg;
                         padding: 16px;
+
+                        &:hover {
+                            color: #9800ff;
+                        }
                     }
                 }
             }
         }
-    }
 }

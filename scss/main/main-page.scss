@@ -12,12 +12,15 @@
 header {
     position: fixed;
     top: 0;
-    z-index: 10;
-    margin: 0 auto;
+    z-index: 2;
+    width: 100%;
     background-color: $color-white;
     @include mobile {
         width: 100%;
         height: 60px;
+    }
+    .logo {
+        display: none;
     }
 }
 
@@ -137,20 +140,28 @@ header {
 .work2 {
     @extend .work;
     background-color: #ffffff;
-    .featured {
-        h4 {
-            font-size: $text-base;
-            text-transform: capitalize;
-            font-weight: 700;
-            letter-spacing: 1%;
-            margin-top: 40px;
-            margin-bottom: 16px;
+    .container_work {
+        .images_wrapper {
+            .image_above {
+                max-width: 600px;
+                width: 100%;
+            }
         }
-        .missino-descr {
-            font-size: 16px;
-            line-height: 25px;
+        .featured {
+            h4 {
+                font-size: $text-base;
+                text-transform: capitalize;
+                font-weight: 700;
+                letter-spacing: 1%;
+                margin-top: 40px;
+                margin-bottom: 16px;
+            }
+            .missino-descr {
+                font-size: 16px;
+                line-height: 25px;
+            }
+    
         }
-
     }
 }
 
