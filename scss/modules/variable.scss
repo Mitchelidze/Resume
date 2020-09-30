@@ -16,22 +16,28 @@ $secondary-color: #fdfdfd;
 
 // fonts
 
-$text-xs : 12px;
-$text-s : 14px;
-$text-base : 16px;
-$text-medium : 18px;
-$text-body-lg : 21px;
-$text-lg : 24px;
-$text-xl : 28px;
-$text-2xl : 30px;
-$text-40 : 40px;
-$text-3xl : 48px;
+// $text-xs : 12px;
+// $text-s : 14px;
+// $text-base : 16px;
+// $text-medium : 18px;
+// $text-body-lg : 21px;
+// $text-lg : 24px;
+// $text-xl : 28px;
+// $text-2xl : 30px;
+// $text-40 : 40px;
+// $text-3xl : 48px;
 
 $font-sizes : (
     "text-xs" : 12px,
     "text-s" : 14px,
     "text-base" : 16px,
-    "text-medium" : 18px
+    "text-medium" : 18px,
+    "text-body-lg" : 21px,
+    "text-lg" : 24px,
+    "text-xl" : 28px,
+    "text-2xl" : 30px,
+    "text-40" : 40px,
+    "text-3xl" : 48px,
 );
 
 

@@ -14,7 +14,7 @@
 
 %title1 {
     color : $main-color;
-    font-size: $text-3xl;
+    font-size: fontsize(text-3xl);
     text-transform: capitalize;
     font-weight: 800;
     margin: 32px 0 8px 0;
@@ -22,27 +22,27 @@
 
 %title1-2 {
     color : $main-color;
-    font-size: $text-40;
+    font-size: fontsize(text-40);
     text-transform: capitalize;
     font-weight: 600;
     margin-bottom: 32px;
 }
 
 %title2 {
-    font-size: $text-2xl;
+    font-size: fontsize(text-2xl);
     margin-bottom: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
 %title3 {
-    font-size: $text-lg;
+    font-size: fontsize(text-lg);
     font-weight: 600;
     margin-bottom: 8px;
 }
 
 %title5 {
-    font-size: $text-base;
+    font-size: fontsize(text-base);
     margin-bottom: 16px;
     letter-spacing: 2%;
     color: $main-color;
@@ -51,7 +51,7 @@
 
 
 %text-base {
-    font-size: $text-base;
+    font-size: fontsize(text-base);
     color: $sec-color;
     letter-spacing: 0.2px;
     line-height: 20px;
@@ -59,14 +59,14 @@
 }
 
 %text-body-lg {
-    font-size: $text-body-lg;
+    font-size: fontsize(text-body-lg);
     color: $sec-color;
     line-height: 28px;
     letter-spacing: 0.3px;
 }
 
 %text-body-medium {
-    font-size: $text-medium;
+    font-size: fontsize(text-medium);
     color: $sec-color;
     line-height: 26px;
     letter-spacing: 0.3px;

@@ -173,26 +173,26 @@ footer .footer-content, .container-main {
 
 .container-main h1 {
   color: #222222;
-  font-size: 40px;
+  font-size: fontsize(text-40);
   text-transform: capitalize;
   font-weight: 600;
   margin-bottom: 32px; }
 
 .work .container_work .featured h2, .work2 .container_work .featured h2, .work3 .container_work .featured h2 {
-  font-size: 30px;
+  font-size: fontsize(text-2xl);
   margin-bottom: 16px;
   font-weight: 700;
   letter-spacing: 0.5px; }
 
 .work .container_work .featured h5, .work2 .container_work .featured h5, .work3 .container_work .featured h5 {
-  font-size: 16px;
+  font-size: fontsize(text-base);
   margin-bottom: 16px;
   letter-spacing: 2%;
   color: #222222;
   text-transform: uppercase; }
 
 .work .container_work .featured__descr, .work2 .container_work .featured__descr, .work3 .container_work .featured__descr, .container-main .main-content p {
-  font-size: 21px;
+  font-size: fontsize(text-body-lg);
   color: #484848;
   line-height: 28px;
   letter-spacing: 0.3px; }
@@ -864,7 +864,7 @@ header {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-    padding: 5% 0 5% 0; }
+    padding: 8% 0 8% 0; }
     .work .container_work .featured, .work2 .container_work .featured, .work3 .container_work .featured {
       max-width: 450px;
       font-family: 'Open Sans', sans-serif; }
@@ -872,7 +872,8 @@ header {
         .work .container_work .featured, .work2 .container_work .featured, .work3 .container_work .featured {
           margin: 16px; } }
       .work .container_work .featured h2, .work2 .container_work .featured h2, .work3 .container_work .featured h2 {
-        margin-bottom: 16px; }
+        margin-bottom: 16px;
+        color: #222222; }
       .work .container_work .featured__descr, .work2 .container_work .featured__descr, .work3 .container_work .featured__descr {
         margin-bottom: 24px; }
       .work .container_work .featured__link, .work2 .container_work .featured__link, .work3 .container_work .featured__link {
@@ -912,12 +913,13 @@ header {
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 700;
-    letter-spacing: 1%;
     margin-top: 40px;
-    margin-bottom: 16px; }
-  .work2 .container_work .featured .missino-descr {
+    margin-bottom: 16px;
+    color: #222222; }
+  .work2 .container_work .featured .mission_descr {
     font-size: 16px;
-    line-height: 25px; }
+    line-height: 24px;
+    color: #484848; }
 
 .work3 .featured__link a::before {
   content: "";
@@ -1974,21 +1976,54 @@ footer {
   max-width: 1200px;
   align-items: center;
   margin: 0 auto; }
+  @media (max-width: 480px) {
+    .articles {
+      flex-wrap: wrap;
+      flex-direction: column; } }
+
+.top {
+  margin-top: 120px; }
 
 article {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   padding: 50px 0;
-  margin-top: 120px;
   display: block; }
+  @media (max-width: 480px) {
+    article {
+      padding-bottom: 35px;
+      padding-left: 6%;
+      padding-right: 6%;
+      margin-bottom: 35px;
+      flex-basis: 100%;
+      max-width: 100%; } }
   article .item_container {
     position: relative;
     max-width: 100%;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
+    article .item_container .item_image {
+      position: relative;
+      z-index: 1;
+      max-width: 350px;
+      height: 525px;
+      object-fit: cover;
+      top: -32px;
+      right: 40px;
+      animation: slideTopImage 1s ease;
+      order: 2;
+      flex: 0 0 350px; }
+      @media (max-width: 480px) {
+        article .item_container .item_image {
+          right: 0;
+          max-width: 240px;
+          margin-bottom: 20px;
+          flex-basis: 100%;
+          order: 0; } }
     article .item_container::before {
       background-image: url(../images/dots2.svg);
-      max-width: 478px;
+      max-width: 454px;
       height: 592px;
       position: absolute;
       width: 100%;
@@ -1997,17 +2032,17 @@ article {
       top: -6vh;
       right: 0;
       bottom: -4vh; }
-    article .item_container .item_image {
-      position: relative;
-      z-index: 1;
-      top: -37px;
-      right: 40px;
-      max-width: 350px;
-      height: 525px;
-      object-fit: cover;
-      order: 2;
-      flex: 0 0 350px;
-      margin: 0; }
+      @media (max-width: 480px) {
+        article .item_container::before {
+          z-index: -2;
+          right: 0;
+          bottom: 10px;
+          position: absolute;
+          top: -76px;
+          left: 48px;
+          display: block;
+          content: '';
+          max-width: 330px; } }
     article .item_container .item_content::after {
       content: '';
       position: absolute;
@@ -2018,6 +2053,17 @@ article {
       z-index: -3;
       width: 100%;
       background: linear-gradient(90deg, #afcf3c 0%, #05a22e 100%); }
+      @media (max-width: 480px) {
+        article .item_container .item_content::after {
+          z-index: -3;
+          bottom: 40px;
+          position: absolute;
+          top: -56px;
+          left: 28px;
+          display: block;
+          content: '';
+          max-width: 240px;
+          height: 525px; } }
     article .item_container .item_content .global_meta {
       display: flex;
       margin-bottom: 2vh; }
@@ -2045,6 +2091,10 @@ article {
       font-size: 60px;
       line-height: 76px;
       margin-bottom: 16px; }
+      @media (max-width: 480px) {
+        article .item_container .item_content .item_title {
+          font-size: 36px;
+          line-height: 42px; } }
     article .item_container .item_content .item_descr {
       max-width: 600px;
       margin-bottom: 24px;
@@ -2061,6 +2111,9 @@ article {
   flex: 1 0 50%;
   align-self: flex-start;
   padding: 24px; }
+  @media (max-width: 480px) {
+    .item {
+      max-width: 100%; } }
   .item .item_container {
     max-width: 100%;
     display: flex; }
@@ -2073,6 +2126,9 @@ article {
       margin-bottom: 15px;
       margin-left: 7%;
       order: 2; }
+      @media (max-width: 480px) {
+        .item .item_container .article_image {
+          order: 0; } }
     .item .item_container .item_content {
       width: 100%;
       padding: 0; }

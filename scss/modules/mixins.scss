@@ -67,3 +67,9 @@
     transition: all 0.5s ease-in-out;
   }
 
+  @function fontsize($fontsize-name) {
+    @return map-get($font-sizes, $fontsize-name);
+}
+
+// use:
+// font-size: fontsize(text-s);

@@ -11,7 +11,7 @@
             width: 90%;
             flex-wrap: wrap;
             font-family: 'Open Sans', sans-serif;
-            font-size: $text-s;
+            font-size: fontsize(text-s);
             color: #222222;
             font-weight: 600;
             margin: 24px auto;
@@ -22,7 +22,7 @@
                 }
                 &__link {
                     color: #222222;
-                    font-size: 18px;
+                    font-size: fontsize(text-medium);
     
                     &:hover {
                         background: -webkit-linear-gradient(90deg, rgba(255,0,138,1) 0%, rgb(152, 0, 255) 100%);
@@ -36,7 +36,7 @@
                 &__icons {
                     .menu-soc__link {
                         color: #222222;
-                        font-size: $text-lg;
+                        font-size: fontsize(text-lg);
                         padding: 16px;
 
                         &:hover {
