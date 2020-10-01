@@ -842,7 +842,7 @@ header {
   color: #717171; }
 
 .parallax {
-  background-image: url(../images/domore.jpg);
+  background-image: url(../images/parallax.jpg);
   width: 100%;
   min-height: 450px;
   background-attachment: fixed;
@@ -1982,7 +1982,12 @@ footer {
       flex-direction: column; } }
 
 .top {
-  margin-top: 120px; }
+  margin-top: 120px;
+  padding-left: 24px; }
+  @media (max-width: 480px) {
+    .top {
+      padding-left: 0;
+      margin-top: 80px; } }
 
 article {
   max-width: 1200px;
@@ -2022,6 +2027,7 @@ article {
         article .item_container .item_image {
           right: 0;
           max-width: 240px;
+          max-height: 360px;
           margin-bottom: 20px;
           flex-basis: 100%;
           order: 0; } }
@@ -2046,7 +2052,8 @@ article {
           left: 8px;
           display: block;
           content: '';
-          max-width: 330px; } }
+          max-width: 330px;
+          max-height: 440px; } }
     article .item_container .item_content::after {
       content: '';
       position: absolute;
@@ -2068,7 +2075,7 @@ article {
           display: block;
           content: '';
           max-width: 240px;
-          height: 525px; } }
+          height: 360px; } }
     article .item_container .item_content .global_meta {
       display: flex;
       margin-bottom: 2vh; }
@@ -2141,7 +2148,7 @@ article {
         max-height: 130px;
         top: -12px;
         right: 12px;
-        background: linear-gradient(90deg, #f946e6 0%, #954da7 100%); }
+        background: linear-gradient(90deg, #554d54 0%, #211f22 100%); }
       .item .item_container .item_content .item_title {
         font-size: 30px;
         width: 100%;
