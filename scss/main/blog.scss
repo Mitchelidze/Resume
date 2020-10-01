@@ -41,19 +41,23 @@ article {
         position: relative;
         max-width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        @include mobile {
+            flex-wrap: wrap;
+        }
 
         .item_image {
             position: relative;
-            z-index: 1;
-            max-width: 350px;
+            top: 0;
+            right: 40px;
+            order: 2;
+            float: none;
+            width: 350px;
             height: 525px;
             object-fit: cover;
-            top: -32px;
-            right: 40px;
-            animation: slideTopImage 1s ease;
-            order: 2;
+            margin: 0;
             flex: 0 0 350px;
+            line-height: 0;
+            z-index: 1;
 
             @include mobile {
                 right: 0;
@@ -81,7 +85,7 @@ article {
                 bottom: 10px;
                 position: absolute;
                 top: -76px;
-                left: 48px;
+                left: 8px;
                 display: block;
                 content: '';
                 max-width: 330px;
@@ -100,6 +104,7 @@ article {
                 max-width: 428px;
                 z-index: -3;
                 width: 100%;
+                height: 525px;
                 background: linear-gradient(90deg, rgba(175,207,60,1) 0%, rgba(5,162,46,1) 100%);
                 @include mobile {
                     z-index: -3;
@@ -145,7 +150,7 @@ article {
                 }
             }
             .item_title {
-                max-width: 1000px;
+                // max-width: 1000px;
                 font-size: 60px;
                 line-height: 76px;
                 margin-bottom: 16px;
